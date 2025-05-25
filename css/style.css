@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+/* 全体で使うアイテム */
+a,h3 {
+    color: #505050;
+    font-weight: bold;
+}
+h1 {
+    color: #0D96A0;
+    font-weight: bold;
+}
+/* aタグにホバーアニメーションを設定する */
+a:hover {
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.footprint {
+    width: 25.49px;
+    height: 25px;
+}
+/* h1=40px、h2=30px、h3=25px */
+h1 {
+    font-size: 4rem;
+    line-height: 60px;
+}
+h3 {
+    font-size: 2.5rem;
+}
+
+/* ヘッダー */
+.header {
+    position: relative;
+    height: 50px;
+}
+.title {
+    position: absolute;
+    padding-left: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    height: 50px;
+    gap: 9.5px;
+}
+.title_nav_btn {
+    line-height: 33px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.nav_list {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.4rem;
+    font-weight: bold;
+    align-items: center;
+    height: 50px;
+    gap: 10px;
+    padding-right: 60px;
+}
+
+/* メイン */
+#main {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+.main_message {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.702);
+    margin-top: 15.2%;
+    padding: 23px 35px 23px 99px;
+}
+.main_message h3 {
+    /* padding-top: 23px; */
+}
