@@ -155,3 +155,25 @@ h3 {
     object-fit: cover;
     object-position: center;
 }
+
+/* サービス */
+#services {
+    padding: 0 100px 59px;
+}
+.service_list {
+    display: flex;
+    gap: 50px;
+    padding-top: 48px;
+}
+.service_content p:first-of-type {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 25px;
+    padding-top: 19px;
+}
+.service_content p:last-of-type {
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 30px;
+    padding-top: 8px;
+}
