@@ -19,7 +19,7 @@ a,h3,p {
     color: #505050;
     font-weight: bold;
 }
-h1,h2 {
+h1,h2,h4 {
     color: #0D96A0;
     font-weight: bold;
 }
@@ -44,7 +44,7 @@ a:hover {
     width: 25.49px;
     height: 25px;
 }
-/* h1=40px、h2=30px、h3=25px */
+/* h1=40px、h2=30px、h3=25px、h4=20px */
 h1 {
     font-size: 4rem;
     line-height: 60px;
@@ -55,6 +55,10 @@ h2 {
 }
 h3 {
     font-size: 2.5rem;
+}
+h4 {
+    font-size: 2rem;
+    line-height: 25px;
 }
 
 /* ヘッダー */
@@ -99,9 +103,6 @@ h3 {
     background-color: rgba(255, 255, 255, 0.702);
     margin-top: 15.2%;
     padding: 23px 35px 23px 99px;
-}
-.main_message h3 {
-    /* padding-top: 23px; */
 }
 
 /* ご挨拶/greeting */
@@ -176,4 +177,37 @@ h3 {
     font-weight: 500;
     line-height: 30px;
     padding-top: 8px;
+}
+
+/* お知らせ */
+#notices {
+    padding: 0 100px 68px;
+}
+.notice_list {
+    margin-top: 46px;
+}
+.notice_content {
+    display: flex;
+    border-top: 1px solid #707070;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    gap: 25px;
+}
+.notice_content:last-of-type {
+    border-bottom: 1px solid #707070;
+}
+.notice_date {
+    font-size: 1.7rem;
+    line-height: 25px;
+    width: 15%;
+    padding-left: 18.5px;
+}
+.notice_title {
+    width: 24%;
+}
+.notice_text {
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 25px;
+    width: 61%;
 }
