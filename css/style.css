@@ -23,6 +23,19 @@ h1,h2 {
     color: #0D96A0;
     font-weight: bold;
 }
+.bg_cyan {
+    background-color: rgba(13, 150, 160, 0.102);
+}
+.section_title {
+    padding-top: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section_title h3 {
+    display: inline-block;
+    padding: 0 20px;
+}
 /* aタグにホバーアニメーションを設定する */
 a:hover {
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -106,4 +119,39 @@ h3 {
     position: absolute;
     top: 60%;
     left: 85%;
+}
+
+/* 強み */
+#strengths {
+    padding: 0 100px 68px;
+}
+.strengths_item {
+    display: flex;
+    padding-top: 50px;
+}
+.reverse {
+    flex-direction: row-reverse;
+}
+.strength_text {
+    width: 50%;
+    padding-right: 45px;
+    line-height: 33px;
+    padding-top: 48px;
+}
+.reverse .strength_text {
+    padding-right: 0;
+    padding-left: 44px;
+}
+.strength_text p:first-of-type {
+    font-size: 2.2rem;
+}
+.strength_text p:last-of-type {
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding-top: 19px;
+}
+.strengths_item img {
+    width: 50%;
+    object-fit: cover;
+    object-position: center;
 }
