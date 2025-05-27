@@ -15,7 +15,7 @@ body {
 }
 
 /* 全体で使うアイテム */
-a,h3,p {
+a,h3,p,label {
     color: #505050;
     font-weight: bold;
 }
@@ -259,4 +259,54 @@ h4 {
 }
 .opening_hour {
     line-height: 40px;
+}
+
+/* お問い合わせ */
+#contact {
+    padding: 0 100px 80px;
+}
+#contact p {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 30px;
+    padding-top: 28px;
+    padding-bottom: 39px;
+}
+.form_row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.form_row label {
+    width: 20%;
+    font-size: 2rem;
+    line-height: 33px;
+}
+.form_row input,
+.form_row textarea {
+    background-color: white;
+    width: 100%;
+}
+.form_row input {
+    height: 40px;
+}
+.form_row textarea {
+    height: 300px;
+}
+.btn_submit {
+    text-align: center;
+}
+.btn_submit input[type="submit"] {
+    background-color: #0D96A0;
+    color: white;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 20px;
 }
