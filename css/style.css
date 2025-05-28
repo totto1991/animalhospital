@@ -26,6 +26,9 @@ h1,h2,h4 {
 .bg_cyan {
     background-color: rgba(13, 150, 160, 0.102);
 }
+.bg_gray {
+    background-color: #505050;
+}
 .section_title {
     padding-top: 63px;
     display: flex;
@@ -287,7 +290,7 @@ h4 {
 }
 .form_row input,
 .form_row textarea {
-    background-color: white;
+    background-color: #FFFFFF;
     width: 100%;
 }
 .form_row input {
@@ -301,7 +304,7 @@ h4 {
 }
 .btn_submit input[type="submit"] {
     background-color: #0D96A0;
-    color: white;
+    color: #FFFFFF;
     width: 200px;
     height: 50px;
     cursor: pointer;
@@ -310,3 +313,34 @@ h4 {
     border-radius: 10px;
     margin-top: 20px;
 }
+
+/* フッター */
+.footer_box {
+    padding-top: 66px;
+    padding-bottom: 70px;
+}
+footer a,footer p {
+    color: #FFFFFF;
+    font-size: 2rem;
+    line-height: 33px;
+}
+.footer_nav {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    max-width: 737px;
+    margin: 0 auto;
+    border-bottom: 1px solid #FFFFFF;
+    padding-bottom: 21px;
+}
+.copyright {
+    text-align: center;
+    padding-top: 27px;
+}
+.sns-area {
+    padding-top: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
