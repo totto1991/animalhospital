@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+/* 全体 */
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
@@ -13,8 +14,6 @@ body {
     max-width: 1080px;
     margin: 0 auto;
 }
-
-/* 全体で使うアイテム */
 a,h3,p,label {
     color: #505050;
     font-weight: bold;
@@ -105,6 +104,9 @@ h4 {
     background-color: rgba(255, 255, 255, 0.702);
     margin-top: 15.2%;
     padding: 23px 35px 23px 99px;
+}
+.main_message p {
+    font-size: 2.5rem;
 }
 
 /* ご挨拶/greeting */
@@ -345,6 +347,16 @@ footer a,footer p {
 
 /* SP版 */
 @media (max-width:767px) {
+    /* 全体 */
+    #container {
+        max-width: 375px;
+    }
+    /*  h1=40px、h2=30px、h3=25px、h4=20px */
+    h1 {
+        font-size: 3rem;
+        line-height: 40px;
+    }
+
     /* ヘッダー */
     .title {
         padding-left: 20px;
@@ -353,6 +365,16 @@ footer a,footer p {
         display: none;
     }
     .title_nav_btn {
+        font-size: 2rem;
+    }
+
+    /* FV/main */
+    .main_message {
+        left: 0;
+        bottom: 0;
+        padding: 18px 23px 14px 20px;
+    }
+    .main_message p {
         font-size: 2rem;
     }
 }
