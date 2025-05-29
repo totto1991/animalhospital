@@ -97,7 +97,6 @@ h4 {
 
 /* FV/main */
 #main {
-    width: 100%;
     height: 500px;
     position: relative;
 }
@@ -291,7 +290,7 @@ h4 {
 .form_row input,
 .form_row textarea {
     background-color: #FFFFFF;
-    width: 100%;
+    width: 711px;
 }
 .form_row input {
     height: 40px;
@@ -344,3 +343,16 @@ footer a,footer p {
     gap: 12px;
 }
 
+/* SP版 */
+@media (max-width:767px) {
+    /* ヘッダー */
+    .title {
+        padding-left: 20px;
+    }
+    .header_nav {
+        display: none;
+    }
+    .title_nav_btn {
+        font-size: 2rem;
+    }
+}
