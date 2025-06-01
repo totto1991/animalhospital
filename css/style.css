@@ -158,11 +158,14 @@ h4 {
     padding-top: 64px;
 }
 .strength_item_list {
+    padding-top: 48px;
     padding-bottom: 68px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 .strengths_item {
     display: flex;
-    padding-top: 48px;
 }
 .reverse {
     flex-direction: row-reverse;
@@ -185,8 +188,13 @@ h4 {
     font-weight: 500;
     padding-top: 19px;
 }
-.strengths_item img {
+.strengths_item picture {
     width: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+.strengths_item img {
+    width: 100%;
     object-fit: cover;
     object-position: center;
 }
@@ -443,14 +451,22 @@ footer a,footer p {
 
     /* ご挨拶/greeting */
     #greeting {
-        padding: 50px 20px 40px;
+        /* padding: 50px 20px 40px; */
+    }
+    .greeting_inner_sp {
+        max-width: 355px;
+        margin-inline: auto;
+        padding-inline: 10px;
+    }
+    #greeting h2 {
+        padding-top: 49px;
     }
     #greeting p {
         font-size: 1.6rem;
         line-height: 30px;
         text-align: left;
-        padding: 0;
         padding-top: 17px;
+        padding-bottom: 31px;
     }
     #greeting img {
         width: 69px;
@@ -461,6 +477,43 @@ footer a,footer p {
 
     /* 強み */
     #strengths {
-        padding: 58px 20px 35px;
+        /* padding: 58px 20px 35px; */
     }
+    .strengths_inner_sp {
+        max-width: 355px;
+        margin-inline: auto;
+        padding-inline: 10px;
+    }
+    #strengths .section_title {
+        padding-top: 51px;
+    }
+    .strength_item_list {
+        padding-top: 42px;
+        padding-bottom: 35px;
+        gap: 42px;
+    }
+    .strengths_item {
+        flex-direction: column-reverse;
+        gap: 26px;
+    }
+    .strength_text, .strengths_item picture {
+        width: 100%;
+    }
+    .strength_text {
+        padding-right: 0;
+        padding-top: 0;
+        line-height: 30px;
+    }
+    .reverse .strength_text {
+        padding-left: 0;
+    }
+    .strength_text p:first-of-type {
+        text-align: center;
+        font-size: 2rem;
+    }
+    .strength_text p:last-of-type {
+        font-size: 1.6rem;
+        padding-top: 8px;
+    }
+    
 }
