@@ -617,4 +617,45 @@ footer a,footer p {
         font-size: 1.6rem;
         line-height: 30px;
     }
+
+    /* お問い合わせ */
+    .contact_inner_sp {
+        max-width: 355px;
+        margin-inline: auto;
+        padding-inline: 10px;
+    }
+    #contact .section_title {
+        padding-top: 43px;
+    }
+    #contact p {
+        font-size: 1.6rem;
+        text-align: left;
+        padding-top: 43px;
+        padding-bottom: 34px;
+    }
+    .form_row {
+        flex-direction: column;
+        gap: 2px;
+        margin-bottom: 17px;
+    }
+    .form_row label {
+        width: 100%;
+        font-size: 1.8rem;
+    }
+    .form_row input,
+    .form_row textarea {
+        width: 100%;
+    }
+    .form_row input {
+        height: 50px;
+    }
+    .btn_submit input[type="submit"] {
+    width: 100%;
+    height: 41px;
+    font-size: 2rem;
+    margin-top: 33px;
+    }
+    .contact_form {
+        padding-bottom: 50px;
+    }
 }
