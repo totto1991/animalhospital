@@ -658,4 +658,29 @@ footer a,footer p {
     .contact_form {
         padding-bottom: 50px;
     }
+
+    /* フッター */
+    .footer_box {
+        max-width: 355px;
+        margin-inline: auto;
+        padding-inline: 10px;
+    }
+    .footer_nav {
+        flex-wrap: wrap;
+        row-gap: 0;
+        column-gap: 20px;
+    }
+    .footer_box {
+        padding-top: 45px;
+        padding-bottom: 50px;
+    }
+    .copyright {
+        padding-top: 15px;
+    }
+    .copyright p {
+        font-size: 1.6rem;
+    }
+    .sns-area {
+        padding-top: 28px;
+    }
 }
