@@ -121,7 +121,7 @@ h4 {
 .main_message {
     position: absolute;
     background-color: rgba(255, 255, 255, 0.702);
-    margin-top: 15.2%;
+    margin-top: 14.5%;
     padding: 23px 35px 23px 99px;
 }
 .main_message p {
@@ -169,7 +169,7 @@ h4 {
     padding-bottom: 68px;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 46px;
 }
 .strengths_item {
     display: flex;
@@ -179,7 +179,7 @@ h4 {
 }
 .strength_text {
     width: 50%;
-    padding-right: 45px;
+    padding-right: 44.5px;
     line-height: 33px;
     padding-top: 48px;
 }
@@ -213,7 +213,7 @@ h4 {
     padding-inline: 30px;
 }
 #services .section_title {
-    padding-top: 63px;
+    padding-top: 62px;
 }
 .service_list {
     display: flex;
@@ -225,7 +225,7 @@ h4 {
     text-align: center;
     font-size: 2rem;
     line-height: 25px;
-    padding-top: 19px;
+    padding-top: 15px;
 }
 .service_content p:last-of-type {
     font-size: 1.7rem;
@@ -250,8 +250,8 @@ h4 {
 .notice_content {
     display: flex;
     border-top: 1px solid #707070;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 17px;
+    padding-bottom: 17px;
 }
 .notice_content:last-of-type {
     border-bottom: 1px solid #707070;
@@ -284,8 +284,8 @@ h4 {
 }
 .access_content {
     display: flex;
-    gap: 46px;
-    padding-top: 50px;
+    /* gap: 46px; */
+    padding-top: 42px;
     padding-bottom: 70px;
 }
 .access_map {
@@ -297,6 +297,7 @@ h4 {
 }
 .access_text {
     width: 50%;
+    padding-left: 46px;
 }
 .access_text_p {
     font-size: 1.8rem;
@@ -334,7 +335,7 @@ h4 {
 
 /* お問い合わせ */
 #contact .section_title {
-    padding-top: 62px;
+    padding-top: 59px;
 }
 .contact_inner {
     max-width: 940px;
@@ -356,7 +357,7 @@ h4 {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 30px;
+    gap: 0px;
     margin-bottom: 30px;
 }
 .form_row label {
@@ -415,7 +416,7 @@ footer a,footer p {
     max-width: 737px;
     margin: 0 auto;
     border-bottom: 1px solid #FFFFFF;
-    padding-bottom: 21px;
+    padding-bottom: 19px;
 }
 .copyright {
     text-align: center;
@@ -425,9 +426,13 @@ footer a,footer p {
     padding-top: 8px;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 12px;
 }
-
+.sns-area a img {
+    width: 22px;
+    height: 22px;
+}
 /* SP版 */
 @media (max-width:767px) {
     /* 全体 */
