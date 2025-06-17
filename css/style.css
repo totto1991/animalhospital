@@ -11,11 +11,11 @@ body {
     font-family: 'Noto Sans JP', sans-serif;
 }
 
-a,h3,p,label {
+a,h3,p,label,h4 {
     color: #505050;
     font-weight: bold;
 }
-h1,h2,h4 {
+h1,h2,h5 {
     color: #0D96A0;
     font-weight: bold;
 }
@@ -36,7 +36,7 @@ h1,h2,h4 {
     display: inline-block;
     width: 25.49px;
     height: 25px;
-    background-image: url("../images/足跡_1.svg");
+    background-image: url("../images/footprint_1.svg");
     background-size: cover;
     vertical-align: middle;
     margin: 0 20px;
@@ -55,18 +55,23 @@ a:hover {
 /* h1=40px、h2=30px、h3=25px、h4=20px */
 h1 {
     font-size: 4rem;
-    line-height: 60px;
+    line-height: 1.5;
 }
 h2 {
     font-size: 3rem;
-    line-height: 50px;
+    line-height: 1.67;
 }
 h3 {
     font-size: 2.5rem;
 }
 h4 {
+    font-size: 2.2rem;
+
+}
+h5 {
     font-size: 2rem;
-    line-height: 25px;
+    line-height: 1.25;
+
 }
 .br_sp {
     display: none;
@@ -79,7 +84,7 @@ h4 {
 }
 .header a {
     display: inline-block;
-    line-height: 50px;
+    line-height: 3.57;
 }
 .title {
     position: absolute;
@@ -92,7 +97,6 @@ h4 {
     gap: 9.5px;
 }
 .title_nav_btn {
-    line-height: 33px;
     font-size: 1.8rem;
     font-weight: bold;
 }
@@ -111,20 +115,20 @@ h4 {
 }
 
 /* FV/main */
-#main {
+#top {
     position: relative;
 }
-.main_img {
+.top_img {
     width: 100%;
     height: auto;
 } 
-.main_message {
+.top_message {
     position: absolute;
     background-color: rgba(255, 255, 255, 0.702);
     margin-top: 14.5%;
     padding: 23px 35px 23px 99px;
 }
-.main_message p {
+.top_message p {
     font-size: 2.5rem;
 }
 
@@ -145,7 +149,7 @@ h4 {
     font-size: 1.8rem;
     font-weight: 500;
     text-align: center;
-    line-height: 33px;
+    line-height: 1.83;
     padding-top: 15px;
     padding-bottom: 60px;
 }
@@ -180,17 +184,14 @@ h4 {
 .strength_text {
     width: 50%;
     padding-right: 44.5px;
-    line-height: 33px;
+    line-height: 1.83;
     padding-top: 48px;
 }
 .reverse .strength_text {
     padding-right: 0;
     padding-left: 44px;
 }
-.strength_text p:first-of-type {
-    font-size: 2.2rem;
-}
-.strength_text p:last-of-type {
+.strength_text p {
     font-size: 1.8rem;
     font-weight: 500;
     padding-top: 19px;
@@ -224,16 +225,15 @@ h4 {
 .service_content img {
     width: 100%;
 }
-.service_content p:first-of-type {
+.service_content h5 {
     text-align: center;
-    font-size: 2rem;
-    line-height: 25px;
     padding-top: 15px;
+    color: #505050;
 }
-.service_content p:last-of-type {
+.service_content p {
     font-size: 1.7rem;
     font-weight: 500;
-    line-height: 30px;
+    line-height: 1.76;
     padding-top: 8px;
 }
 
@@ -261,7 +261,7 @@ h4 {
 }
 .notice_date {
     font-size: 1.7rem;
-    line-height: 25px;
+    line-height: 1.47;
     width: 110.5px;
     padding-left: 18.5px;
 }
@@ -272,7 +272,7 @@ h4 {
 .notice_text {
     font-size: 1.7rem;
     font-weight: 500;
-    line-height: 25px;
+    line-height: 1.47;
     max-width: 534.5px;
 }
 
@@ -294,10 +294,6 @@ h4 {
 .access_map {
     width: 50%;
 }
-.access_hospital_name {
-    font-size: 2.2rem;
-    line-height: 33px;
-}
 .access_text {
     width: 50%;
     padding-left: 46px;
@@ -308,13 +304,12 @@ h4 {
 }
 .address {
     padding-top: 15px;
-    line-height: 27px;
+    line-height: 1.5;
 }
 .phone {
     padding-top: 14px;
     display: flex;
-    align-items: flex-end;
-    line-height: 40px;
+    align-items: baseline;
 }
 .phone_number {
     font-size: 2.5rem;
@@ -324,7 +319,7 @@ h4 {
 .email {
     padding-top: 11px;
     padding-bottom: 25px;
-    line-height: 27px;
+    line-height: 1.5;
 }
 .access_border {
     border-top: 1px solid #707070;
@@ -333,7 +328,7 @@ h4 {
     padding-bottom: 14px;
 }
 .opening_hour {
-    line-height: 40px;
+    line-height: 2.22;
 }
 
 /* お問い合わせ */
@@ -349,7 +344,7 @@ h4 {
     text-align: center;
     font-size: 1.7rem;
     font-weight: 500;
-    line-height: 30px;
+    line-height: 1.76;
     padding-top: 28px;
     padding-bottom: 39px;
 }
@@ -366,7 +361,7 @@ h4 {
 .form_row label {
     width: 20%;
     font-size: 2rem;
-    line-height: 33px;
+    line-height: 1.65;
 }
 .form_row input,
 .form_row textarea {
@@ -382,7 +377,7 @@ h4 {
     height: 300px;
     resize: none;
     padding: 10px;
-    line-height: 30px;
+    line-height: 1.88;
 }
 .btn_submit {
     text-align: center;
@@ -410,7 +405,7 @@ h4 {
 footer a,footer p {
     color: #FFFFFF;
     font-size: 2rem;
-    line-height: 33px;
+    line-height: 1.65;
 }
 .footer_nav {
     display: flex;
@@ -442,11 +437,11 @@ footer a,footer p {
     /*  h1=40px、h2=30px、h3=25px、h4=20px */
     h1 {
         font-size: 3rem;
-        line-height: 40px;
+        line-height: 1.33;
     }
     h2 {
         font-size: 2.5rem;
-        line-height: 35px;
+        line-height: 1.4;
     }
     .br_sp {
         display: inline;
@@ -464,15 +459,15 @@ footer a,footer p {
     }
 
     /* FV/main */
-    .main_message {
+    .top_message {
         left: 0;
         bottom: 0;
         padding: 18px 23px 14px 20px;
     }
-    .main_message h1 {
+    .top_message h1 {
         padding-top: 10px;
     }
-    .main_message p {
+    .top_message p {
         font-size: 2rem;
     }
 
@@ -487,7 +482,7 @@ footer a,footer p {
     }
     #greeting p {
         font-size: 1.6rem;
-        line-height: 30px;
+        line-height: 1.88;
         text-align: left;
         padding-top: 17px;
         padding-bottom: 31px;
@@ -523,7 +518,7 @@ footer a,footer p {
     .strength_text {
         padding-right: 0;
         padding-top: 0;
-        line-height: 30px;
+        line-height: 1.88;
     }
     .reverse .strength_text {
         padding-left: 0;
@@ -554,7 +549,7 @@ footer a,footer p {
     }
     .service_content p:first-of-type {
         padding-top: 29px;
-        line-height: 30px;
+        line-height: 1.5;
     }
     .service_content p:last-of-type {
         padding-top: 7px;
@@ -592,7 +587,7 @@ footer a,footer p {
     }
     .notice_text {
         font-size: 1.6rem;
-        line-height: 24px;
+        line-height: 1.5;
         width: 100%;
         padding-top: 6px;
     }
@@ -623,7 +618,7 @@ footer a,footer p {
     }
     .address {
         font-size: 1.6rem;
-        line-height: 24px;
+        line-height: 1.5;
         padding-top: 15px;
     }
     .phone {
@@ -641,7 +636,7 @@ footer a,footer p {
     }
     .opening_hour {
         font-size: 1.6rem;
-        line-height: 30px;
+        line-height: 1.88;
     }
 
     /* お問い合わせ */
