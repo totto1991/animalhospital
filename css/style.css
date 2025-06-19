@@ -265,30 +265,36 @@ h5 {
     margin-top: 46px;
     padding-bottom: 68px;
 }
+.notice_border {
+    border-top: 1px solid #707070;
+}
+.notice_border:last-child {
+    border-bottom: 1px solid #707070;
+}
 .notice_content {
     display: flex;
-    border-top: 1px solid #707070;
     padding-top: 17px;
     padding-bottom: 17px;
-}
-.notice_content:last-of-type {
-    border-bottom: 1px solid #707070;
+    align-items: center;
 }
 .notice_date {
     font-size: 1.7rem;
     line-height: 1.47;
     width: 110.5px;
     padding-left: 18.5px;
+    flex-shrink: 0;
 }
 .notice_title {
     width: 234px;
     padding-left: 25px;
+    flex-shrink: 0;
 }
 .notice_text {
     font-size: 1.7rem;
     font-weight: 500;
     line-height: 1.47;
     max-width: 534.5px;
+    flex: 1;
 }
 
 /* アクセス */
@@ -306,8 +312,12 @@ h5 {
     padding-top: 42px;
     padding-bottom: 70px;
 }
-.access_map {
+.map_wrapper {
     width: 50%;
+}
+.access_map {
+    width: 100%;
+    height: 100%;
 }
 .access_text {
     width: 50%;
@@ -321,6 +331,9 @@ h5 {
     padding-top: 15px;
     line-height: 1.5;
 }
+.address br {
+    display: none;
+}
 .phone {
     padding-top: 14px;
     display: flex;
@@ -331,10 +344,16 @@ h5 {
     color: #0D96A0;
     font-weight: bold;
 }
+.phone_sp_only {
+    display: none;
+}
 .email {
     padding-top: 11px;
     padding-bottom: 25px;
     line-height: 1.5;
+}
+.email_link {
+    font-weight: 500;
 }
 .access_border {
     border-top: 1px solid #707070;
@@ -446,6 +465,13 @@ footer a,footer p {
     width: 22px;
     height: 22px;
 }
+
+@media (max-width: 880px) {
+    .address br {
+        display: inline;
+    }
+}
+
 /* SP版 */
 @media (max-width:767px) {
     /* 全体 */
@@ -625,10 +651,14 @@ footer a,footer p {
         padding-bottom: 50px;
         gap: 26px;
     }
+    .map_wrapper {
+        aspect-ratio: 335/222;
+        width: 100%;
+    }
     .access_map {
         width: 100%;
         /* max-width: 335px; */
-        height: 222px;
+        height: 100%;
     }
     .access_text {
         width: 100%;
@@ -639,10 +669,22 @@ footer a,footer p {
         line-height: 1.5;
         padding-top: 15px;
     }
+    .address br {
+        display: none;
+    }
     .phone {
         font-size: 1.6rem;
         padding-top: 6px;
     }
+    .phone_pc_only {
+        display: none;
+    }
+    .phone_sp_only {
+        display: inline;
+    }
+    .phone_number a {
+    color: #0D96A0;
+}
     .email {
         font-size: 1.6rem;
         padding-top: 7px;
