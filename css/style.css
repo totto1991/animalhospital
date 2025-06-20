@@ -385,12 +385,15 @@ h5 {
 .contact_form {
     padding-bottom: 80px;
 }
-.form_row {
+.form_row{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     gap: 0px;
     margin-bottom: 30px;
+}
+.form_content {
+    align-items: flex-start;
 }
 .form_row label {
     width: 20%;
@@ -401,7 +404,7 @@ h5 {
 .form_row textarea {
     background-color: #FFFFFF;
     width: 711px;
-    padding-left: 10px;
+    padding: 10px;
     font-size: 1.6rem;
 }
 .form_row input {
@@ -466,9 +469,14 @@ footer a,footer p {
     height: 22px;
 }
 
+/* 中間サイズ */
 @media (max-width: 880px) {
     .address br {
         display: inline;
+    }
+
+    .form_row .label_email {
+        font-size: 1.6rem;
     }
 }
 
@@ -723,6 +731,9 @@ footer a,footer p {
         width: 100%;
         font-size: 1.8rem;
     }
+    .form_row .label_email {
+        font-size: 1.8rem;
+    }
     .form_row input,
     .form_row textarea {
         width: 100%;
@@ -772,5 +783,9 @@ footer a,footer p {
 @media (max-width:375px) {
     h4 {
         font-size: 1.6rem;
+    }
+
+    #contact h3 {
+        font-size: 2rem;
     }
 }
