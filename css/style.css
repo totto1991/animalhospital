@@ -457,6 +457,9 @@ footer a,footer p {
     text-align: center;
     padding-top: 27px;
 }
+.copyright_br_sp {
+    display: none;
+}
 .sns-area {
     padding-top: 8px;
     display: flex;
@@ -464,9 +467,15 @@ footer a,footer p {
     align-items: center;
     gap: 12px;
 }
+.sns-area a {
+    display: inline-block;
+    padding: 0;
+    line-height: 1;
+}
 .sns-area a img {
     width: 22px;
     height: 22px;
+    display: block;
 }
 
 /* 中間サイズ */
@@ -787,5 +796,12 @@ footer a,footer p {
 
     #contact h3 {
         font-size: 2rem;
+    }
+
+    .footer_nav a {
+        font-size: 1.5rem;
+    }
+    .copyright_br_sp {
+        display: inline;
     }
 }
