@@ -78,6 +78,13 @@ h5 {
 }
 
 /* ヘッダー */
+.header_bg {
+    width: 100%;
+    height: 50px;
+    background-color: #FFFFFF;
+    position: fixed;
+    z-index: 1;
+}
 .header {
     position: relative;
     height: 50px;
@@ -88,7 +95,6 @@ h5 {
     max-width: 1080px;
     width: 100%;
     z-index: 1000;
-    background-color: #FFFFFF;
 }
 .header a {
     display: inline-block;
@@ -517,6 +523,7 @@ footer a,footer p {
     }
     .title_nav_btn {
         font-size: 2rem;
+        margin-left: 20px;
     }
 
     /* FV/main */
@@ -584,9 +591,10 @@ footer a,footer p {
     .reverse .strength_text {
         padding-left: 0;
     }
-    .strength_text p:first-of-type {
+    .strength_text h4 {
         text-align: center;
-        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1.5;
     }
     .strength_text p:last-of-type {
         font-size: 1.6rem;
@@ -651,6 +659,7 @@ footer a,footer p {
         line-height: 1.5;
         width: 100%;
         padding-top: 6px;
+        max-width: 1080px;
     }
 
     /* アクセス */
@@ -790,14 +799,28 @@ footer a,footer p {
 }
 
 @media (max-width:375px) {
-    h4 {
+    /* 強み */
+    .strength_text h4 {
         font-size: 1.6rem;
     }
 
+    /* トップ */
+    .top_message h3 {
+        font-size: 2.4rem;
+    }
+    h1 {
+        font-size: 2.9rem;
+    }
+
+    /* お問い合わせ */
     #contact h3 {
         font-size: 2rem;
     }
+    .address br {
+        display: inline;
+    }
 
+    /* フッター */
     .footer_nav a {
         font-size: 1.5rem;
     }
