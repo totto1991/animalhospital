@@ -52,7 +52,7 @@ a:hover {
     width: 25.49px;
     height: 25px;
 }
-/* h1=40px、h2=30px、h3=25px、h4=20px */
+/* h1=40px、h2=30px、h3=25px、h4=22px */
 h1 {
     font-size: 4rem;
     line-height: 1.5;
@@ -364,8 +364,9 @@ h5 {
 .access_border {
     border-top: 1px solid #707070;
     border-bottom: 1px solid #707070;
-    padding-top: 15px;
+    padding-top: 20px;
     padding-bottom: 14px;
+    margin-left: 5px;
 }
 .opening_hour {
     line-height: 2.22;
@@ -525,6 +526,9 @@ footer a,footer p {
         font-size: 2rem;
         margin-left: 20px;
     }
+    .title_nav_btn p {
+        font-size: 2rem;
+    }
 
     /* FV/main */
     .top_message {
@@ -535,7 +539,7 @@ footer a,footer p {
     .top_message h1 {
         padding-top: 10px;
     }
-    .top_message p {
+    .top_message h3 {
         font-size: 2rem;
     }
 
@@ -573,7 +577,7 @@ footer a,footer p {
     }
     .strength_item_list {
         padding-top: 42px;
-        padding-bottom: 35px;
+        padding-bottom: 33px;
         gap: 42px;
     }
     .strengths_item {
@@ -598,7 +602,7 @@ footer a,footer p {
     }
     .strength_text p:last-of-type {
         font-size: 1.6rem;
-        padding-top: 8px;
+        padding-top: 6px;
     }
     
     /* サービス */
@@ -609,14 +613,14 @@ footer a,footer p {
     }
     .service_list {
         flex-direction: column;
-        padding-top: 45px;
+        padding-top: 47px;
         padding-bottom: 39px;
         gap: 35px;
     }
     #services .section_title {
         padding-top: 42px;
     }
-    .service_content p:first-of-type {
+    .service_content h5:first-of-type {
         padding-top: 29px;
         line-height: 1.5;
     }
@@ -673,7 +677,7 @@ footer a,footer p {
     }
     .access_content {
         flex-direction: column;
-        padding-top: 46px;
+        padding-top: 49px;
         padding-bottom: 50px;
         gap: 26px;
     }
@@ -685,6 +689,9 @@ footer a,footer p {
         width: 100%;
         /* max-width: 335px; */
         height: 100%;
+    }
+    .access_hospital_name {
+        font-size: 2.2rem;
     }
     .access_text {
         width: 100%;
@@ -714,11 +721,12 @@ footer a,footer p {
     .email {
         font-size: 1.6rem;
         padding-top: 7px;
-        padding-bottom: 14px;
+        padding-bottom: 19px;
     } 
     .access_border {
         padding-top: 12px;
         padding-bottom: 12px;
+        margin-left: 0;
     }
     .opening_hour {
         font-size: 1.6rem;
@@ -739,10 +747,11 @@ footer a,footer p {
         text-align: left;
         padding-top: 43px;
         padding-bottom: 34px;
+        line-height: 1.88;
     }
     .form_row {
         flex-direction: column;
-        gap: 2px;
+        gap: 6px;
         margin-bottom: 17px;
     }
     .form_row label {
@@ -779,6 +788,7 @@ footer a,footer p {
         flex-wrap: wrap;
         row-gap: 0;
         column-gap: 20px;
+        padding-bottom: 22px;
     }
     .footer_nav a {
         font-size: 1.8rem;
@@ -788,13 +798,13 @@ footer a,footer p {
         padding-bottom: 50px;
     }
     .copyright {
-        padding-top: 15px;
+        padding-top: 20px;
     }
     .copyright p {
         font-size: 1.6rem;
     }
     .sns-area {
-        padding-top: 25px;
+        padding-top: 33px;
     }
 }
 
