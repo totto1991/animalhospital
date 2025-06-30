@@ -125,6 +125,7 @@ a:hover {
 .top_img {
     width: 100%;
     height: auto;
+    vertical-align: bottom;
 } 
 .top_message {
     position: absolute;
@@ -226,6 +227,7 @@ a:hover {
     width: 100%;
     object-fit: cover;
     object-position: center;
+    vertical-align: bottom;
 }
 
 /* サービス */
@@ -245,6 +247,7 @@ a:hover {
 }
 .service_content img {
     width: 100%;
+    vertical-align: bottom;
 }
 .service_content h3 {
     text-align: center;
