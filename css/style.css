@@ -15,20 +15,21 @@ a,h3,p,label,h4 {
     color: #505050;
     font-weight: bold;
 }
-h1,h2,h5 {
-    color: #0D96A0;
-    font-weight: bold;
-}
 .bg_cyan {
     background-color: rgba(13, 150, 160, 0.102);
 }
 .bg_gray {
     background-color: #505050;
 }
-.section_title {
+
+/* セクションタイトル */
+h2.section_title {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #505050;
 }
 .section_title::before,
 .section_title::after {
@@ -51,26 +52,6 @@ a:hover {
 .footprint1 {
     width: 25.49px;
     height: 25px;
-}
-/* h1=40px、h2=30px、h3=25px、h4=22px */
-h1 {
-    font-size: 4rem;
-    line-height: 1.5;
-}
-h2 {
-    font-size: 3rem;
-    line-height: 1.67;
-}
-h3 {
-    font-size: 2.5rem;
-}
-h4 {
-    font-size: 2.2rem;
-
-}
-h5 {
-    font-size: 2rem;
-    line-height: 1.25;
 }
 
 .br_sp {
@@ -151,8 +132,17 @@ h5 {
     margin-top: 14.5%;
     padding: 23px 35px 23px 99px;
 }
-.top_message p {
+.top_message h1 {
     font-size: 2.5rem;
+    font-weight: 700;
+    color: #505050;
+}
+.top_message h1 span {
+    font-size: 4rem;
+    line-height: 1.5;
+    color: #0D96A0;
+    padding-top: 8px;
+    display: inline-block;
 }
 
 /* ご挨拶/greeting */
@@ -165,6 +155,10 @@ h5 {
 #greeting h2 {
     text-align: center;
     padding-top: 60px;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.67;
+    color: #0D96A0;
 }
 #greeting p {
     font-size: 1.8rem;
@@ -212,6 +206,12 @@ h5 {
     padding-right: 0;
     padding-left: 44px;
 }
+.strength_text h3 {
+    font-size: 2.2rem;
+    line-height: 1.5;
+    font-weight: 700;
+    color: #505050;
+}
 .strength_text p {
     font-size: 1.8rem;
     font-weight: 500;
@@ -246,10 +246,13 @@ h5 {
 .service_content img {
     width: 100%;
 }
-.service_content h5 {
+.service_content h3 {
     text-align: center;
     padding-top: 15px;
     color: #505050;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.25;
 }
 .service_content p {
     font-size: 1.7rem;
@@ -290,10 +293,14 @@ h5 {
     padding-left: 18.5px;
     flex-shrink: 0;
 }
-.notice_title {
+h3.notice_title {
     width: 234px;
     padding-left: 25px;
     flex-shrink: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #0D96A0;
 }
 .notice_text {
     font-size: 1.7rem;
@@ -328,6 +335,12 @@ h5 {
 .access_text {
     width: 50%;
     padding-left: 46px;
+}
+h3.access_hospital_name {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #505050;
+    line-height: 1.5;
 }
 .access_text_p {
     font-size: 1.8rem;
@@ -500,7 +513,7 @@ footer a,footer p {
 @media (max-width:767px) {
     /* 全体 */
     /*  h1=40px、h2=30px、h3=25px、h4=20px */
-    h1 {
+    /* h1 {
         font-size: 3rem;
         line-height: 1.33;
     }
@@ -510,7 +523,7 @@ footer a,footer p {
     }
     h4 {
         font-size: 2rem;
-    }
+    } */
     .br_sp {
         display: inline;
     }
@@ -537,10 +550,12 @@ footer a,footer p {
         padding: 18px 23px 14px 20px;
     }
     .top_message h1 {
-        padding-top: 10px;
-    }
-    .top_message h3 {
         font-size: 2rem;
+    }
+    .top_message h1 span {
+        font-size: 3rem;
+        line-height: 1.33;
+        padding-top: 7px;
     }
 
     /* ご挨拶/greeting */
@@ -551,6 +566,8 @@ footer a,footer p {
     }
     #greeting h2 {
         padding-top: 49px;
+        font-size: 2.5rem;
+        line-height: 1.4;
     }
     #greeting p {
         font-size: 1.6rem;
@@ -595,10 +612,11 @@ footer a,footer p {
     .reverse .strength_text {
         padding-left: 0;
     }
-    .strength_text h4 {
+    .strength_text h3 {
         text-align: center;
         font-weight: 700;
         line-height: 1.5;
+        font-size: 2rem;
     }
     .strength_text p:last-of-type {
         font-size: 1.6rem;
@@ -620,11 +638,11 @@ footer a,footer p {
     #services .section_title {
         padding-top: 42px;
     }
-    .service_content h5:first-of-type {
+    .service_content h3 {
         padding-top: 29px;
         line-height: 1.5;
     }
-    .service_content p:last-of-type {
+    .service_content p {
         padding-top: 7px;
         letter-spacing: -1px;
     }
@@ -653,7 +671,7 @@ footer a,footer p {
         width: 100%;
         padding-left: 0px;
     }
-    .notice_title {
+    h3.notice_title {
         width: 100%;
         padding-top: 2px;
         padding-left: 0;
