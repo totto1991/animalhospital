@@ -54,10 +54,6 @@ a:hover {
     height: 25px;
 }
 
-.br_sp {
-    display: none;
-}
-
 /* ヘッダー */
 .header_bg {
     width: 100%;
@@ -372,9 +368,6 @@ h3.access_hospital_name {
     padding-top: 15px;
     line-height: 1.5;
 }
-.address br {
-    display: none;
-}
 .phone {
     padding-top: 14px;
     display: flex;
@@ -384,9 +377,6 @@ h3.access_hospital_name {
     font-size: 2.5rem;
     color: #0D96A0;
     font-weight: bold;
-}
-.phone_sp_only {
-    display: none;
 }
 .email {
     padding-top: 11px;
@@ -502,9 +492,6 @@ footer a,footer p {
     text-align: center;
     padding-top: 27px;
 }
-.copyright_br_sp {
-    display: none;
-}
 .sns-area {
     padding-top: 8px;
     display: flex;
@@ -524,9 +511,22 @@ footer a,footer p {
 }
 
 /* 非表示 */
+.br_sp {
+    display: none;
+}
 .br-970px {
     display: none;
 }
+.address br {
+    display: none;
+}
+.phone_sp_only {
+    display: none;
+}
+.copyright_br_sp {
+    display: none;
+}
+
 
 /* 中間サイズ */
 @media (max-width: 1030px) {
@@ -546,6 +546,14 @@ footer a,footer p {
 @media (max-width: 970px) {
     .br-970px {
         display: inline;
+    }
+    .strength_text {
+        /* padding-right: 44.5px; */
+        padding-right: 20px;
+    }
+    .reverse .strength_text {
+        /* padding-left: 44px; */
+        padding-left: 20px;
     }
 }
 
