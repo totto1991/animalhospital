@@ -486,8 +486,15 @@ footer a,footer p {
     gap: 14px;
     max-width: 737px;
     margin: 0 auto;
-    border-bottom: 1px solid #FFFFFF;
+    /* border-bottom: 1px solid #FFFFFF; */
     padding-bottom: 19px;
+    position: relative;
+}
+.footer-border {
+    height: 1px;
+    background-color: #FFFFFF;
+    max-width: 737px;
+    margin: 0 auto;
 }
 .copyright {
     text-align: center;
@@ -522,9 +529,6 @@ footer a,footer p {
     display: none;
 }
 .phone_sp_only {
-    display: none;
-}
-.copyright_br_sp {
     display: none;
 }
 
@@ -624,6 +628,7 @@ footer a,footer p {
         left: 0;
         bottom: 0;
         padding: 18px 23px 14px 20px;
+        width: 100%;
     }
     .top_message h1 {
         font-size: 2rem;
@@ -883,6 +888,8 @@ footer a,footer p {
         row-gap: 0;
         column-gap: 20px;
         padding-bottom: 22px;
+        margin-left: -20px;
+        margin-right: -20px;
     }
     .footer_nav a {
         font-size: 1.8rem;
@@ -896,6 +903,7 @@ footer a,footer p {
     }
     .copyright p {
         font-size: 1.6rem;
+        word-break: keep-all;
     }
     .sns-area {
         padding-top: 33px;
@@ -937,9 +945,6 @@ footer a,footer p {
 
     /* フッター */
     .footer_nav a {
-        font-size: 1.5rem;
-    }
-    .copyright_br_sp {
-        display: inline;
+        /* font-size: 1.5rem; */
     }
 }
