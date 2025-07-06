@@ -195,7 +195,7 @@ a:hover {
     padding-bottom: 68px;
     display: flex;
     flex-direction: column;
-    gap: 46px;
+    gap: 48px;
 }
 .strengths_item {
     display: flex;
@@ -246,7 +246,7 @@ a:hover {
     padding-inline: 30px;
 }
 #services .section_title {
-    padding-top: 62px;
+    padding-top: 68px;
 }
 .service_list {
     display: flex;
@@ -335,12 +335,12 @@ h3.notice_title {
     padding-inline: 30px;
 }
 #access .section_title {
-    padding-top: 63px;
+    padding-top: 67px;
 }
 .access_content {
     display: flex;
     /* gap: 46px; */
-    padding-top: 42px;
+    padding-top: 44px;
     padding-bottom: 70px;
 }
 .map_wrapper {
@@ -380,7 +380,7 @@ h3.access_hospital_name {
 }
 .email {
     padding-top: 11px;
-    padding-bottom: 25px;
+    padding-bottom: 28px;
     line-height: 1.5;
 }
 .email_link {
@@ -390,7 +390,7 @@ h3.access_hospital_name {
     border-top: 1px solid #707070;
     border-bottom: 1px solid #707070;
     padding-top: 20px;
-    padding-bottom: 14px;
+    padding-bottom: 10px;
     margin-left: 5px;
 }
 .opening_hour {
@@ -592,18 +592,6 @@ footer a,footer p {
 /* SP版 */
 @media (max-width:767px) {
     /* 全体 */
-    /*  h1=40px、h2=30px、h3=25px、h4=20px */
-    /* h1 {
-        font-size: 3rem;
-        line-height: 1.33;
-    }
-    h2 {
-        font-size: 2.5rem;
-        line-height: 1.4;
-    }
-    h4 {
-        font-size: 2rem;
-    } */
     .br_sp {
         display: inline;
     }
@@ -611,6 +599,9 @@ footer a,footer p {
     /* ヘッダー */
     .title {
         padding-left: 20px;
+    }
+    .header {
+        padding-left: 0;
     }
     .header_nav {
         display: none;
@@ -625,10 +616,13 @@ footer a,footer p {
 
     /* FV/main */
     .top_message {
+        top: 75%;
         left: 0;
         bottom: 0;
-        padding: 18px 23px 14px 20px;
-        width: 100%;
+        padding-top: 18px;
+        padding-bottom: 14px;
+        padding-left: 20px;
+        width: 83%;
     }
     .top_message h1 {
         font-size: 2rem;
@@ -674,9 +668,9 @@ footer a,footer p {
         padding-top: 54px;
     }
     .strength_item_list {
-        padding-top: 42px;
+        padding-top: 46px;
         padding-bottom: 33px;
-        gap: 42px;
+        gap: 46px;
     }
     .strengths_item {
         flex-direction: column-reverse;
@@ -714,10 +708,10 @@ footer a,footer p {
         flex-direction: column;
         padding-top: 47px;
         padding-bottom: 39px;
-        gap: 35px;
+        gap: 38px;
     }
     #services .section_title {
-        padding-top: 42px;
+        padding-top: 46px;
     }
     .service_content h3 {
         padding-top: 29px;
@@ -735,7 +729,7 @@ footer a,footer p {
         padding-inline: 20px;
     }
     #notices .section_title {
-        padding-top: 43px;
+        padding-top: 46px;
     }
     .notice_list {
         padding-bottom: 50px;
@@ -888,8 +882,8 @@ footer a,footer p {
         row-gap: 0;
         column-gap: 20px;
         padding-bottom: 22px;
-        margin-left: -20px;
-        margin-right: -20px;
+        margin-left: -15px;
+        margin-right: -15px;
     }
     .footer_nav a {
         font-size: 1.8rem;
@@ -907,6 +901,11 @@ footer a,footer p {
     }
     .sns-area {
         padding-top: 33px;
+    }
+
+    /* 非表示 */
+    .br-970px {
+        display: none;
     }
 }
 
@@ -946,5 +945,10 @@ footer a,footer p {
     /* フッター */
     .footer_nav a {
         /* font-size: 1.5rem; */
+    }
+
+    /* 非表示 */
+    .br-970px {
+        display: none;
     }
 }
