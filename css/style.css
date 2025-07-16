@@ -62,7 +62,7 @@ a:hover {
     position: fixed;
     z-index: 1;
 }
-.header {
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -70,14 +70,16 @@ a:hover {
     max-width: 1080px;
     margin: 0 auto;
     height: 50px;
-    padding-left: clamp(10px, 9.17vw, 99px);
-    padding-right: clamp(10px, 5.56vw, 60px);
+    /* padding-left: clamp(10px, 9.17vw, 99px);
+    padding-right: clamp(10px, 5.56vw, 60px); */
+    padding-left: 99px;
+    padding-right: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
 }
-.header a {
+header a {
     display: inline-block;
 }
 .title_nav_btn {
@@ -563,6 +565,11 @@ footer a,footer p {
 }
 
 @media (max-width: 880px) {
+    /* ヘッダー */
+    header {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
     .top_message {
     padding-top: 16.6px;
     padding-bottom: 16.6px;
@@ -600,7 +607,7 @@ footer a,footer p {
     .title {
         padding-left: 20px;
     }
-    .header {
+    header {
         padding-left: 0;
     }
     .header_nav {
