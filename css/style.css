@@ -70,8 +70,6 @@ header {
     max-width: 1080px;
     margin: 0 auto;
     height: 50px;
-    /* padding-left: clamp(10px, 9.17vw, 99px);
-    padding-right: clamp(10px, 5.56vw, 60px); */
     padding-left: 99px;
     padding-right: 60px;
     display: flex;
@@ -133,7 +131,7 @@ header a {
     padding-top: 23px;
     padding-bottom: 23px;
     padding-left: 99px;
-    width: 45.5%;
+    width: 492px;
 }
 .top_message h1 {
     font-size: 2.5rem;
@@ -623,13 +621,15 @@ footer a,footer p {
 
     /* FV/main */
     .top_message {
-        top: 75%;
+        top: auto;
+        position: absolute;
         left: 0;
         bottom: 0;
         padding-top: 18px;
         padding-bottom: 14px;
         padding-left: 20px;
-        width: 83%;
+        width: 311px;
+        height: 148px;
     }
     .top_message h1 {
         font-size: 2rem;
@@ -922,12 +922,16 @@ footer a,footer p {
         font-size: 1.6rem;
     }
 
-    /* トップ */
-    .top_message h3 {
-        font-size: 2.4rem;
+    /* FV */
+    .top_message {
+        width: 250px;
+        height: 119px;
     }
-    h1 {
-        font-size: 2.9rem;
+    .top_message h1 {
+        font-size: 1.6rem;
+    }
+    .top_message h1 span {
+        font-size: 2.4rem;
     }
 
     /* お問い合わせ */
