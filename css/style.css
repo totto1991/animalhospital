@@ -924,9 +924,6 @@ footer a,footer p {
     }
 
     /* お問い合わせ */
-    #contact h2 {
-        /* font-size: 2rem; */
-    }
     #contact .section_title::before,
     #contact .section_title::after {
         content: "";
@@ -940,11 +937,6 @@ footer a,footer p {
     }
     .address br {
         display: inline;
-    }
-
-    /* フッター */
-    .footer_nav a {
-        /* font-size: 1.5rem; */
     }
 
     /* 非表示 */
