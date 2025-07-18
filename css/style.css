@@ -62,7 +62,7 @@ a:hover {
     position: fixed;
     z-index: 1;
 }
-.header {
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -70,14 +70,14 @@ a:hover {
     max-width: 1080px;
     margin: 0 auto;
     height: 50px;
-    padding-left: clamp(10px, 9.17vw, 99px);
-    padding-right: clamp(10px, 5.56vw, 60px);
+    padding-left: 99px;
+    padding-right: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
 }
-.header a {
+header a {
     display: inline-block;
 }
 .title_nav_btn {
@@ -131,7 +131,7 @@ a:hover {
     padding-top: 23px;
     padding-bottom: 23px;
     padding-left: 99px;
-    width: 45.5%;
+    width: 492px;
 }
 .top_message h1 {
     font-size: 2.5rem;
@@ -389,7 +389,7 @@ h3.access_hospital_name {
 .access_border {
     border-top: 1px solid #707070;
     border-bottom: 1px solid #707070;
-    padding-top: 20px;
+    padding-top: 18px;
     padding-bottom: 10px;
     margin-left: 5px;
 }
@@ -465,6 +465,7 @@ h3.access_hospital_name {
     font-weight: bold;
     border-radius: 10px;
     margin-top: 20px;
+    transition: all 0.5s ease;
 }
 .btn_submit input[type="submit"]:hover {
     background-color: #40C2CC;
@@ -549,20 +550,21 @@ footer a,footer p {
 }
 
 @media (max-width: 970px) {
-    .br-970px {
-        display: inline;
+    /* 強み */
+    .strength_text h3 {
+        font-size: 1.6rem;
     }
-    .strength_text {
-        /* padding-right: 44.5px; */
-        padding-right: 20px;
-    }
-    .reverse .strength_text {
-        /* padding-left: 44px; */
-        padding-left: 20px;
+    .strength_text p {
+        font-size: 1.3rem;
     }
 }
 
 @media (max-width: 880px) {
+    /* ヘッダー */
+    header {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
     .top_message {
     padding-top: 16.6px;
     padding-bottom: 16.6px;
@@ -600,7 +602,7 @@ footer a,footer p {
     .title {
         padding-left: 20px;
     }
-    .header {
+    header {
         padding-left: 0;
     }
     .header_nav {
@@ -616,13 +618,15 @@ footer a,footer p {
 
     /* FV/main */
     .top_message {
-        top: 75%;
+        top: auto;
+        position: absolute;
         left: 0;
         bottom: 0;
         padding-top: 18px;
         padding-bottom: 14px;
         padding-left: 20px;
-        width: 83%;
+        width: 311px;
+        height: 148px;
     }
     .top_message h1 {
         font-size: 2rem;
@@ -693,7 +697,7 @@ footer a,footer p {
         line-height: 1.5;
         font-size: 2rem;
     }
-    .strength_text p:last-of-type {
+    .strength_text p {
         font-size: 1.6rem;
         padding-top: 6px;
     }
@@ -909,24 +913,29 @@ footer a,footer p {
     }
 }
 
-@media (max-width:375px) {
+/* 最小サイズ */
+@media (max-width:374px) {
     /* 強み */
-    .strength_text h4 {
+    .strength_text h3 {
         font-size: 1.6rem;
     }
-
-    /* トップ */
-    .top_message h3 {
-        font-size: 2.4rem;
+    .strength_text p {
+        font-size: 1.3rem;
     }
-    h1 {
-        font-size: 2.9rem;
+
+    /* FV */
+    .top_message {
+        width: 250px;
+        height: 119px;
+    }
+    .top_message h1 {
+        font-size: 1.6rem;
+    }
+    .top_message h1 span {
+        font-size: 2.4rem;
     }
 
     /* お問い合わせ */
-    #contact h2 {
-        /* font-size: 2rem; */
-    }
     #contact .section_title::before,
     #contact .section_title::after {
         content: "";
@@ -944,7 +953,10 @@ footer a,footer p {
 
     /* フッター */
     .footer_nav a {
-        /* font-size: 1.5rem; */
+        font-size: 1.7rem;
+    }
+    .copyright p {
+        font-size: 1.5rem;
     }
 
     /* 非表示 */
