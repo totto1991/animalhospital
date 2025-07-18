@@ -913,6 +913,7 @@ footer a,footer p {
     }
 }
 
+/* 最小サイズ */
 @media (max-width:375px) {
     /* 強み */
     .strength_text h3 {
@@ -948,6 +949,14 @@ footer a,footer p {
     }
     .address br {
         display: inline;
+    }
+
+    /* フッター */
+    .footer_nav a {
+        font-size: 1.7rem;
+    }
+    .copyright p {
+        font-size: 1.5rem;
     }
 
     /* 非表示 */
