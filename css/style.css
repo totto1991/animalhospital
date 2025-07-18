@@ -549,16 +549,12 @@ footer a,footer p {
 }
 
 @media (max-width: 970px) {
-    .br-970px {
-        display: inline;
+    /* 強み */
+    .strength_text h3 {
+        font-size: 1.6rem;
     }
-    .strength_text {
-        /* padding-right: 44.5px; */
-        padding-right: 20px;
-    }
-    .reverse .strength_text {
-        /* padding-left: 44px; */
-        padding-left: 20px;
+    .strength_text p {
+        font-size: 1.3rem;
     }
 }
 
@@ -700,7 +696,7 @@ footer a,footer p {
         line-height: 1.5;
         font-size: 2rem;
     }
-    .strength_text p:last-of-type {
+    .strength_text p {
         font-size: 1.6rem;
         padding-top: 6px;
     }
@@ -918,8 +914,11 @@ footer a,footer p {
 
 @media (max-width:375px) {
     /* 強み */
-    .strength_text h4 {
+    .strength_text h3 {
         font-size: 1.6rem;
+    }
+    .strength_text p {
+        font-size: 1.3rem;
     }
 
     /* FV */
