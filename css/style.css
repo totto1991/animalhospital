@@ -55,27 +55,20 @@ a:hover {
 }
 
 /* ヘッダー */
-.header_bg {
-    width: 100%;
-    height: 50px;
-    background-color: #FFFFFF;
-    position: fixed;
-    z-index: 1;
-}
 header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    max-width: 1080px;
     margin: 0 auto;
     height: 50px;
-    padding-left: 99px;
-    padding-right: 60px;
+    padding-left: clamp(10px, calc(27.77vw - 202.88px), 99px);
+    padding-right: clamp(10px, calc(15.38vw - 108px), 60px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
+    background-color: #FFFFFF;
 }
 header a {
     display: inline-block;
@@ -86,6 +79,7 @@ header a {
     display: flex !important;
     align-items: center;
     height: 50px;
+
 }
 .title_nav_btn img {
     height: 100%;
@@ -561,10 +555,10 @@ footer a,footer p {
 
 @media (max-width: 880px) {
     /* ヘッダー */
-    header {
+    /* header {
         padding-left: 30px;
         padding-right: 30px;
-    }
+    } */
     .top_message {
     padding-top: 16.6px;
     padding-bottom: 16.6px;
