@@ -124,8 +124,8 @@ header a {
     top: 36.7%;
     padding-top: 23px;
     padding-bottom: 23px;
-    padding-left: 99px;
-    width: 492px;
+    padding-left: clamp(10px, calc(10px + 89 * ((100vw - 767px) / 313)), 99px);
+    padding-right: clamp(10px, calc(10px + 25 * ((100vw - 767px) / 313)), 35px);
 }
 .top_message h1 {
     font-size: 2.5rem;
@@ -529,20 +529,6 @@ footer a,footer p {
 
 
 /* 中間サイズ */
-@media (max-width: 1030px) {
-    .top_message {
-    padding-top: 18.4px;
-    padding-bottom: 18.4px;
-    padding-left: 79.2px;
-    }
-    .top_message h1 {
-    font-size: 2rem;
-    }
-    .top_message h1 span {
-    font-size: 3.2rem;
-    }
-}
-
 @media (max-width: 970px) {
     /* 強み */
     .strength_text h3 {
@@ -554,27 +540,12 @@ footer a,footer p {
 }
 
 @media (max-width: 880px) {
-    /* ヘッダー */
-    /* header {
-        padding-left: 30px;
-        padding-right: 30px;
-    } */
-    .top_message {
-    padding-top: 16.6px;
-    padding-bottom: 16.6px;
-    padding-left: 71.2px;
-    }
-    .top_message h1 {
-    font-size: 1.8rem;
-    }
-    .top_message h1 span {
-    font-size: 2.9rem;
-    }
-
+    /* アクセス */
     .address br {
         display: inline;
     }
 
+    /* お問い合わせ */
     .form_row label {
     width: 22%;
     }
@@ -618,8 +589,8 @@ footer a,footer p {
         bottom: 0;
         padding-top: 18px;
         padding-bottom: 14px;
-        padding-left: 20px;
-        width: 311px;
+        padding-left: clamp(5px, calc(5px + 15 * ((100vw - 320px) / 55)), 20px);
+        padding-right: clamp(5px, calc(5px + 18 * ((100vw - 320px) / 55)), 23px);
         height: 148px;
     }
     .top_message h1 {
@@ -917,17 +888,6 @@ footer a,footer p {
         font-size: 1.3rem;
     }
 
-    /* FV */
-    .top_message {
-        width: 250px;
-        height: 119px;
-    }
-    .top_message h1 {
-        font-size: 1.6rem;
-    }
-    .top_message h1 span {
-        font-size: 2.4rem;
-    }
 
     /* お問い合わせ */
     #contact .section_title::before,
