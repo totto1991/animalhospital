@@ -530,6 +530,11 @@ footer a,footer p {
 
 /* 中間サイズ */
 @media (max-width: 970px) {
+    /* ご挨拶 */
+    .br-970px {
+        display: inline;
+    }
+
     /* 強み */
     .strength_text h3 {
         font-size: 1.6rem;
