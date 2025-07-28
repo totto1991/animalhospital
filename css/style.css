@@ -186,7 +186,7 @@ header a {
 }
 .strength_item_list {
     padding-top: 48px;
-    padding-bottom: 68px;
+    padding-bottom: 63px;
     display: flex;
     flex-direction: column;
     gap: 48px;
@@ -247,7 +247,7 @@ header a {
 .service_list {
     display: flex;
     gap: 50px;
-    padding-top: 48px;
+    padding-top: 44px;
     padding-bottom: 59px;
 }
 .service_content img {
@@ -648,13 +648,13 @@ footer a,footer p {
         line-height: 1.88;
         text-align: left;
         padding-top: 17px;
-        padding-bottom: 31px;
+        padding-bottom: 37px;
     }
     #greeting img {
         width: 69px;
         height: 63px;
         right: 30px;
-        bottom: 38px;
+        bottom: 43px;
     }
 
     /* 強み */
@@ -667,9 +667,9 @@ footer a,footer p {
         padding-top: 54px;
     }
     .strength_item_list {
-        padding-top: 46px;
+        padding-top: 42px;
         padding-bottom: 33px;
-        gap: 46px;
+        gap: 42px;
     }
     .strengths_item {
         flex-direction: column-reverse;
@@ -731,7 +731,7 @@ footer a,footer p {
         padding-inline: 20px;
     }
     #notices .section_title {
-        padding-top: 46px;
+        padding-top: 44px;
     }
     .notice_list {
         padding-bottom: 50px;
@@ -740,7 +740,7 @@ footer a,footer p {
         flex-direction: column;
         /* padding: 28px 20px; */
         padding-top: 28px;
-        padding-bottom: 28px;
+        padding-bottom: 27px;
         padding-left: 10px;
         gap: 0;
     }
@@ -891,7 +891,7 @@ footer a,footer p {
         font-size: 1.8rem;
     }
     .footer_box {
-        padding-top: 45px;
+        padding-top: 47px;
         padding-bottom: 50px;
     }
     .copyright {
