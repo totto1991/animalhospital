@@ -126,22 +126,22 @@ header a {
     display: block;
 } 
 .top_message {
+    width: 45.556vw;
+    height: 19.444vw;
     position: absolute;
     background-color: rgba(255, 255, 255, 0.702);
-    top: 36.7%;
-    padding-top: 23px;
-    padding-bottom: 23px;
-    padding-left: clamp(10px, calc(10px + 89 * ((100vw - 767px) / 313)), 99px);
-    padding-right: clamp(10px, calc(10px + 25 * ((100vw - 767px) / 313)), 35px);
+    top: 18.704vw;
+    padding-top: 2.129vw;
+    padding-left: 9.1667vw;
 }
 .top_message h1 {
-    font-size: 2.5rem;
+    font-size: 2.315vw;
     font-weight: 700;
     color: #505050;
     line-height: 1.44;
 }
 .top_message h1 span {
-    font-size: 4rem;
+    font-size: 3.704vw;
     line-height: 1.5;
     color: #0D96A0;
     padding-top: 8px;
@@ -549,7 +549,6 @@ footer a,footer p {
 }
 
 
-/* 中間サイズ */
 @media (max-width: 970px) {
     /* ご挨拶 */
     .br-970px {
@@ -601,8 +600,8 @@ footer a,footer p {
     .br-890px {
         display: inline;
     }
-
 }
+
 
 /* SP版 */
 @media (max-width:767px) {
@@ -626,21 +625,20 @@ footer a,footer p {
 
     /* FV/main */
     .top_message {
+        width: 82.933vw;
+        height: 39.467vw;
         top: auto;
         position: absolute;
         left: 0;
         bottom: 0;
-        padding-top: 18px;
-        padding-bottom: 14px;
-        padding-left: clamp(5px, calc(5px + 15 * ((100vw - 320px) / 55)), 20px);
-        padding-right: clamp(5px, calc(5px + 18 * ((100vw - 320px) / 55)), 23px);
-        height: 148px;
+        padding-top: 4.8vw;
+        padding-left: 5.333vw;
     }
     .top_message h1 {
-        font-size: 2rem;
+        font-size: 5.333vw;
     }
     .top_message h1 span {
-        font-size: 3rem;
+        font-size: 8vw;
         line-height: 1.33;
         padding-top: 7px;
     }
