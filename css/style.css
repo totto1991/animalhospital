@@ -203,27 +203,22 @@ header a {
 .strengths_item {
     display: flex;
     align-items: center;
+    gap: 4.07vw;
 }
 .reverse {
     flex-direction: row-reverse;
 }
 .strength_text {
-    width: 100%;
-}
-.reverse .strength_text {
-    padding-right: 0;
-}
-.reverse .strength_text h3{
-    padding-left: clamp(5px, calc(5px + 39 * ((100vw - 767px) / 313)), 44px);
-}
-.reverse .strength_text p{
-    padding-left: clamp(5px, calc(5px + 39 * ((100vw - 767px) / 313)), 44px);
+    flex: 1;
 }
 .strength_text h3 {
     font-size: 2.2rem;
     line-height: 1.5;
     font-weight: 700;
     color: #505050;
+}
+.strength_text h3 span {
+    display: inline-block;
 }
 .strength_text p {
     font-size: 1.8rem;
@@ -232,7 +227,7 @@ header a {
     line-height: 1.83;
 }
 .strength_img_area {
-    width: 100%;
+    width: 50%;
 }
 .strengths_img {
     width: 100%;
@@ -529,18 +524,6 @@ footer a,footer p {
 }
 
 /* 非表示 */
-.br_sp {
-    display: none;
-}
-.br-890px {
-    display: none;
-}
-.br-970px {
-    display: none;
-}
-.br-374px {
-    display: none;
-}
 .address br {
     display: none;
 }
@@ -552,24 +535,6 @@ footer a,footer p {
     /* ご挨拶 */
     .greeting_inner p span {
         display: inline-block;
-    }
-}
-
-@media (max-width: 970px) {
-    /* 強み */
-    .br-970px {
-        display: inline;
-    }
-
-    /* 非表示 */
-    .br-pc-only {
-        display: none;
-    }
-    .br-890px {
-        display: none;
-    }
-    .br-374px {
-        display: none;
     }
 }
 
@@ -587,19 +552,6 @@ footer a,footer p {
     .form_row textarea {
         margin-left: auto;
         width: 78%;
-    }
-
-    /* 非表示 */
-    .br-970px {
-        display: none;
-    }
-    .br-374px {
-        display: none;
-    }
-
-    /* 表示 */
-    .br-890px {
-        display: inline;
     }
 }
 
@@ -655,6 +607,9 @@ footer a,footer p {
         font-size: 2.5rem;
         line-height: 1.4;
     }
+    #greeting h2 span {
+        display: block;
+    }
     #greeting p {
         font-size: 1.6rem;
         line-height: 1.88;
@@ -687,13 +642,22 @@ footer a,footer p {
         flex-direction: column-reverse;
         gap: 25px;
     }
-    .strength_text, .strength_img {
+    .strength_text {
+        width: 100%;
+    }
+    .strength_img_area {
+        width: 100%;
+    }
+    .strength_img {
         width: 100%;
     }
     .strength_text {
         padding-right: 0;
         padding-top: 0;
         line-height: 1.88;
+    }
+    .strength_text span {
+        display: block;
     }
     .reverse .strength_text h3 {
         padding-left: 0;
@@ -917,25 +881,6 @@ footer a,footer p {
     .sns-area {
         padding-top: 33px;
     }
-
-    /* 非表示 */
-    .br-970px {
-        display: none;
-    }
-    .br-890px {
-        display: none;
-    }
-    .br-374px {
-        display: none;
-    }
-    .br-pc-only {
-        display: none;
-    }
-
-    /* 表示 */
-    .br_sp {
-        display: inline;
-    }
 }
 
 /* 最小サイズ */
@@ -962,18 +907,5 @@ footer a,footer p {
     }
     .copyright p {
         font-size: 1.5rem;
-    }
-
-    /* 非表示 */
-    .br-970px {
-        display: none;
-    }
-    .br-890px {
-        display: none;
-    }
-
-    /* 表示 */
-    .br-374px {
-        display: inline;
     }
 }
