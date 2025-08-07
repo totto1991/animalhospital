@@ -122,7 +122,6 @@ header a {
 .top_img {
     width: 100%;
     height: auto;
-    vertical-align: bottom;
     display: block;
 } 
 .top_message {
@@ -247,14 +246,19 @@ header a {
     padding-top: 68px;
 }
 .service_list {
-    display: flex;
-    gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 5.6818%;
+    column-gap: 5.6818%;
     padding-top: 44px;
     padding-bottom: 59px;
 }
+.service_content {
+    /* width: 29.5454%; */
+    width: 100%;
+}
 .service_content img {
     width: 100%;
-    vertical-align: bottom;
     display: block;
 }
 .service_content h3 {
@@ -683,6 +687,7 @@ footer a,footer p {
         padding-inline: 20px;
     }
     .service_list {
+        display: flex;
         flex-direction: column;
         padding-top: 47px;
         padding-bottom: 39px;
