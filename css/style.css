@@ -847,6 +847,7 @@ footer a,footer p {
     }
     .btn_submit input[type="submit"] {
         width: 100%;
+        max-width: 335px;
         height: 41px;
         font-size: 2rem;
         margin-top: 33px;
