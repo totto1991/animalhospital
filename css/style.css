@@ -30,6 +30,7 @@ h2.section_title {
     font-size: 2.5rem;
     font-weight: 700;
     color: #505050;
+    line-height: 1.2;
 }
 .section_title::before,
 .section_title::after {
@@ -83,6 +84,7 @@ header a {
 }
 .title_nav_btn img {
     height: 100%;
+    display: block;
 }
 .title_nav_btn p {
     margin: 0;
@@ -92,6 +94,7 @@ header a {
     display: flex;
     align-items: center;
     padding-left: 9.5px;
+    line-height: 1.83;
 }
 .nav_list {
     display: flex;
@@ -102,10 +105,13 @@ header a {
     height: 50px;
     gap: 10px;
     padding-right: 0;
-    line-height: 3.57;
+    /* line-height: 3.57; */
 }
 .nav_list li {
     height: 50px;
+}
+.nav_list li a {
+    line-height: 3.57;
 }
 
 /* FV/main */
@@ -116,24 +122,25 @@ header a {
 .top_img {
     width: 100%;
     height: auto;
-    vertical-align: bottom;
+    display: block;
 } 
 .top_message {
+    width: 45.556vw;
+    height: 19.444vw;
     position: absolute;
     background-color: rgba(255, 255, 255, 0.702);
-    top: 36.7%;
-    padding-top: 23px;
-    padding-bottom: 23px;
-    padding-left: clamp(10px, calc(10px + 89 * ((100vw - 767px) / 313)), 99px);
-    padding-right: clamp(10px, calc(10px + 25 * ((100vw - 767px) / 313)), 35px);
+    top: 18.704vw;
+    padding-top: 2.129vw;
+    padding-left: 9.1667vw;
 }
 .top_message h1 {
-    font-size: 2.5rem;
+    font-size: 2.315vw;
     font-weight: 700;
     color: #505050;
+    line-height: 1.44;
 }
 .top_message h1 span {
-    font-size: 4rem;
+    font-size: 3.704vw;
     line-height: 1.5;
     color: #0D96A0;
     padding-top: 8px;
@@ -170,6 +177,7 @@ header a {
     position: absolute;
     right: 16px;
     bottom: 34px;
+    display: block;
 }
 
 /* 強み */
@@ -182,34 +190,25 @@ header a {
     padding-inline: 30px;
 }
 #strengths .section_title {
-    padding-top: 64px;
+    padding-top: 69px;
 }
 .strength_item_list {
     padding-top: 48px;
-    padding-bottom: 63px;
+    padding-bottom: 67px;
     display: flex;
     flex-direction: column;
-    gap: 48px;
+    gap: 50px;
 }
 .strengths_item {
     display: flex;
     align-items: center;
+    gap: 4.07vw;
 }
 .reverse {
     flex-direction: row-reverse;
 }
 .strength_text {
-    width: 100%;
-    line-height: 1.83;
-}
-.reverse .strength_text {
-    padding-right: 0;
-}
-.reverse .strength_text h3{
-    padding-left: clamp(5px, calc(5px + 39 * ((100vw - 767px) / 313)), 44px);
-}
-.reverse .strength_text p{
-    padding-left: clamp(5px, calc(5px + 39 * ((100vw - 767px) / 313)), 44px);
+    flex: 1;
 }
 .strength_text h3 {
     font-size: 2.2rem;
@@ -217,19 +216,21 @@ header a {
     font-weight: 700;
     color: #505050;
 }
+.strength_text h3 span {
+    display: inline-block;
+}
 .strength_text p {
     font-size: 1.8rem;
     font-weight: 500;
     padding-top: 19px;
+    line-height: 1.83;
 }
-.strength_img {
-    width: 100%;
+.strength_img_area {
+    width: 50%;
 }
-.strengths_img picture img {
+.strengths_img {
     width: 100%;
-    object-fit: cover;
-    object-position: center;
-    vertical-align: bottom;
+    display: block;
 }
 
 /* サービス */
@@ -245,18 +246,24 @@ header a {
     padding-top: 68px;
 }
 .service_list {
-    display: flex;
-    gap: 50px;
-    padding-top: 44px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 5.6818%;
+    column-gap: 5.6818%;
+    padding-top: 50px;
     padding-bottom: 59px;
+}
+.service_content {
+    /* width: 29.5454%; */
+    width: 100%;
 }
 .service_content img {
     width: 100%;
-    vertical-align: bottom;
+    display: block;
 }
 .service_content h3 {
     text-align: center;
-    padding-top: 15px;
+    padding-top: 18px;
     color: #505050;
     font-size: 2rem;
     font-weight: 700;
@@ -279,10 +286,10 @@ header a {
     padding-inline: 30px;
 }
 #notices .section_title {
-    padding-top: 63px;
+    padding-top: 67px;
 }
 .notice_list {
-    margin-top: 46px;
+    margin-top: 49px;
     padding-bottom: 68px;
 }
 .notice_border {
@@ -336,7 +343,7 @@ h3.notice_title {
 .access_content {
     display: flex;
     /* gap: 46px; */
-    padding-top: 44px;
+    padding-top: 46px;
     padding-bottom: 70px;
 }
 .map_wrapper {
@@ -368,15 +375,20 @@ h3.access_hospital_name {
     padding-top: 14px;
     display: flex;
     align-items: baseline;
+    line-height: 1.5;
 }
 .phone_number {
     font-size: 2.5rem;
     color: #0D96A0;
     font-weight: bold;
+    /* line-height: 1.6; */
+}
+.phone_pc_only {
+    line-height: 1.6;
 }
 .email {
     padding-top: 11px;
-    padding-bottom: 28px;
+    padding-bottom: 26px;
     line-height: 1.5;
 }
 .email_link {
@@ -385,7 +397,7 @@ h3.access_hospital_name {
 .access_border {
     border-top: 1px solid #707070;
     border-bottom: 1px solid #707070;
-    padding-top: 18px;
+    padding-top: 16px;
     padding-bottom: 10px;
     margin-left: 5px;
 }
@@ -398,7 +410,7 @@ h3.access_hospital_name {
     scroll-margin-top: 50px;
 }
 #contact .section_title {
-    padding-top: 59px;
+    padding-top: 63px;
 }
 .contact_inner {
     max-width: 940px;
@@ -410,8 +422,8 @@ h3.access_hospital_name {
     font-size: 1.7rem;
     font-weight: 500;
     line-height: 1.76;
-    padding-top: 28px;
-    padding-bottom: 39px;
+    padding-top: 30px;
+    padding-bottom: 43px;
 }
 .contact_form {
     padding-bottom: 80px;
@@ -516,18 +528,6 @@ footer a,footer p {
 }
 
 /* 非表示 */
-.br_sp {
-    display: none;
-}
-.br-890px {
-    display: none;
-}
-.br-970px {
-    display: none;
-}
-.br-374px {
-    display: none;
-}
 .address br {
     display: none;
 }
@@ -535,28 +535,10 @@ footer a,footer p {
     display: none;
 }
 
-
-/* 中間サイズ */
-@media (max-width: 970px) {
+@media (min-width: 600px) and (max-width: 970px) {
     /* ご挨拶 */
-    .br-970px {
-        display: inline;
-    }
-
-    /* 強み */
-    .br-970px {
-        display: inline;
-    }
-
-    /* 非表示 */
-    .br-pc-only {
-        display: none;
-    }
-    .br-890px {
-        display: none;
-    }
-    .br-374px {
-        display: none;
+    .greeting_inner p span {
+        display: inline-block;
     }
 }
 
@@ -575,21 +557,8 @@ footer a,footer p {
         margin-left: auto;
         width: 78%;
     }
-
-    /* 非表示 */
-    .br-970px {
-        display: none;
-    }
-    .br-374px {
-        display: none;
-    }
-
-    /* 表示 */
-    .br-890px {
-        display: inline;
-    }
-
 }
+
 
 /* SP版 */
 @media (max-width:767px) {
@@ -613,21 +582,20 @@ footer a,footer p {
 
     /* FV/main */
     .top_message {
+        width: 82.933vw;
+        height: 39.467vw;
         top: auto;
         position: absolute;
         left: 0;
         bottom: 0;
-        padding-top: 18px;
-        padding-bottom: 14px;
-        padding-left: clamp(5px, calc(5px + 15 * ((100vw - 320px) / 55)), 20px);
-        padding-right: clamp(5px, calc(5px + 18 * ((100vw - 320px) / 55)), 23px);
-        height: 148px;
+        padding-top: 4.8vw;
+        padding-left: 5.333vw;
     }
     .top_message h1 {
-        font-size: 2rem;
+        font-size: 5.333vw;
     }
     .top_message h1 span {
-        font-size: 3rem;
+        font-size: 8vw;
         line-height: 1.33;
         padding-top: 7px;
     }
@@ -642,6 +610,9 @@ footer a,footer p {
         padding-top: 49px;
         font-size: 2.5rem;
         line-height: 1.4;
+    }
+    #greeting h2 span {
+        display: block;
     }
     #greeting p {
         font-size: 1.6rem;
@@ -667,21 +638,30 @@ footer a,footer p {
         padding-top: 54px;
     }
     .strength_item_list {
-        padding-top: 42px;
+        padding-top: 46px;
         padding-bottom: 33px;
         gap: 42px;
     }
     .strengths_item {
         flex-direction: column-reverse;
-        gap: 25px;
+        gap: 29px;
     }
-    .strength_text, .strength_img {
+    .strength_text {
+        width: 100%;
+    }
+    .strength_img_area {
+        width: 100%;
+    }
+    .strength_img {
         width: 100%;
     }
     .strength_text {
         padding-right: 0;
         padding-top: 0;
         line-height: 1.88;
+    }
+    .strength_text span {
+        display: block;
     }
     .reverse .strength_text h3 {
         padding-left: 0;
@@ -697,7 +677,7 @@ footer a,footer p {
     }
     .strength_text p {
         font-size: 1.6rem;
-        padding-top: 6px;
+        padding-top: 8px;
     }
     
     /* サービス */
@@ -707,10 +687,11 @@ footer a,footer p {
         padding-inline: 20px;
     }
     .service_list {
+        display: flex;
         flex-direction: column;
         padding-top: 47px;
         padding-bottom: 39px;
-        gap: 38px;
+        gap: 41px;
     }
     #services .section_title {
         padding-top: 46px;
@@ -731,7 +712,7 @@ footer a,footer p {
         padding-inline: 20px;
     }
     #notices .section_title {
-        padding-top: 44px;
+        padding-top: 47px;
     }
     .notice_list {
         padding-bottom: 50px;
@@ -768,11 +749,11 @@ footer a,footer p {
         padding-inline: 20px;
     }
     #access .section_title {
-        padding-top: 40px;
+        padding-top: 45px;
     }
     .access_content {
         flex-direction: column;
-        padding-top: 49px;
+        padding-top: 53px;
         padding-bottom: 50px;
         gap: 26px;
     }
@@ -808,7 +789,8 @@ footer a,footer p {
         display: none;
     }
     .phone_sp_only {
-        display: inline;
+        display: inline-block;
+        line-height: 1.6;
     }
     .phone_number a {
     color: #0D96A0;
@@ -816,11 +798,11 @@ footer a,footer p {
     .email {
         font-size: 1.6rem;
         padding-top: 7px;
-        padding-bottom: 19px;
+        padding-bottom: 15px;
     } 
     .access_border {
         padding-top: 12px;
-        padding-bottom: 12px;
+        padding-bottom: 10px;
         margin-left: 0;
     }
     .opening_hour {
@@ -835,13 +817,13 @@ footer a,footer p {
         padding-inline: 20px;
     }
     #contact .section_title {
-        padding-top: 41px;
+        padding-top: 44px;
     }
     #contact p {
         font-size: 1.6rem;
         text-align: left;
-        padding-top: 43px;
-        padding-bottom: 34px;
+        padding-top: 45px;
+        padding-bottom: 36px;
         line-height: 1.88;
     }
     .form_row {
@@ -865,6 +847,7 @@ footer a,footer p {
     }
     .btn_submit input[type="submit"] {
         width: 100%;
+        max-width: 335px;
         height: 41px;
         font-size: 2rem;
         margin-top: 33px;
@@ -904,25 +887,6 @@ footer a,footer p {
     .sns-area {
         padding-top: 33px;
     }
-
-    /* 非表示 */
-    .br-970px {
-        display: none;
-    }
-    .br-890px {
-        display: none;
-    }
-    .br-374px {
-        display: none;
-    }
-    .br-pc-only {
-        display: none;
-    }
-
-    /* 表示 */
-    .br_sp {
-        display: inline;
-    }
 }
 
 /* 最小サイズ */
@@ -949,18 +913,5 @@ footer a,footer p {
     }
     .copyright p {
         font-size: 1.5rem;
-    }
-
-    /* 非表示 */
-    .br-970px {
-        display: none;
-    }
-    .br-890px {
-        display: none;
-    }
-
-    /* 表示 */
-    .br-374px {
-        display: inline;
     }
 }
