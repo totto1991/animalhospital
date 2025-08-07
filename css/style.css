@@ -190,14 +190,14 @@ header a {
     padding-inline: 30px;
 }
 #strengths .section_title {
-    padding-top: 64px;
+    padding-top: 69px;
 }
 .strength_item_list {
     padding-top: 48px;
-    padding-bottom: 63px;
+    padding-bottom: 67px;
     display: flex;
     flex-direction: column;
-    gap: 48px;
+    gap: 50px;
 }
 .strengths_item {
     display: flex;
@@ -250,7 +250,7 @@ header a {
     grid-template-columns: repeat(3, 1fr);
     row-gap: 5.6818%;
     column-gap: 5.6818%;
-    padding-top: 44px;
+    padding-top: 50px;
     padding-bottom: 59px;
 }
 .service_content {
@@ -263,7 +263,7 @@ header a {
 }
 .service_content h3 {
     text-align: center;
-    padding-top: 15px;
+    padding-top: 18px;
     color: #505050;
     font-size: 2rem;
     font-weight: 700;
@@ -286,10 +286,10 @@ header a {
     padding-inline: 30px;
 }
 #notices .section_title {
-    padding-top: 63px;
+    padding-top: 67px;
 }
 .notice_list {
-    margin-top: 46px;
+    margin-top: 49px;
     padding-bottom: 68px;
 }
 .notice_border {
@@ -343,7 +343,7 @@ h3.notice_title {
 .access_content {
     display: flex;
     /* gap: 46px; */
-    padding-top: 44px;
+    padding-top: 46px;
     padding-bottom: 70px;
 }
 .map_wrapper {
@@ -388,7 +388,7 @@ h3.access_hospital_name {
 }
 .email {
     padding-top: 11px;
-    padding-bottom: 28px;
+    padding-bottom: 26px;
     line-height: 1.5;
 }
 .email_link {
@@ -397,7 +397,7 @@ h3.access_hospital_name {
 .access_border {
     border-top: 1px solid #707070;
     border-bottom: 1px solid #707070;
-    padding-top: 18px;
+    padding-top: 16px;
     padding-bottom: 10px;
     margin-left: 5px;
 }
@@ -410,7 +410,7 @@ h3.access_hospital_name {
     scroll-margin-top: 50px;
 }
 #contact .section_title {
-    padding-top: 59px;
+    padding-top: 63px;
 }
 .contact_inner {
     max-width: 940px;
@@ -422,8 +422,8 @@ h3.access_hospital_name {
     font-size: 1.7rem;
     font-weight: 500;
     line-height: 1.76;
-    padding-top: 28px;
-    padding-bottom: 39px;
+    padding-top: 30px;
+    padding-bottom: 43px;
 }
 .contact_form {
     padding-bottom: 80px;
@@ -638,13 +638,13 @@ footer a,footer p {
         padding-top: 54px;
     }
     .strength_item_list {
-        padding-top: 42px;
+        padding-top: 46px;
         padding-bottom: 33px;
         gap: 42px;
     }
     .strengths_item {
         flex-direction: column-reverse;
-        gap: 25px;
+        gap: 29px;
     }
     .strength_text {
         width: 100%;
@@ -677,7 +677,7 @@ footer a,footer p {
     }
     .strength_text p {
         font-size: 1.6rem;
-        padding-top: 6px;
+        padding-top: 8px;
     }
     
     /* サービス */
@@ -691,7 +691,7 @@ footer a,footer p {
         flex-direction: column;
         padding-top: 47px;
         padding-bottom: 39px;
-        gap: 38px;
+        gap: 41px;
     }
     #services .section_title {
         padding-top: 46px;
@@ -712,7 +712,7 @@ footer a,footer p {
         padding-inline: 20px;
     }
     #notices .section_title {
-        padding-top: 44px;
+        padding-top: 47px;
     }
     .notice_list {
         padding-bottom: 50px;
@@ -749,11 +749,11 @@ footer a,footer p {
         padding-inline: 20px;
     }
     #access .section_title {
-        padding-top: 40px;
+        padding-top: 45px;
     }
     .access_content {
         flex-direction: column;
-        padding-top: 49px;
+        padding-top: 53px;
         padding-bottom: 50px;
         gap: 26px;
     }
@@ -798,11 +798,11 @@ footer a,footer p {
     .email {
         font-size: 1.6rem;
         padding-top: 7px;
-        padding-bottom: 19px;
+        padding-bottom: 15px;
     } 
     .access_border {
         padding-top: 12px;
-        padding-bottom: 12px;
+        padding-bottom: 10px;
         margin-left: 0;
     }
     .opening_hour {
@@ -817,13 +817,13 @@ footer a,footer p {
         padding-inline: 20px;
     }
     #contact .section_title {
-        padding-top: 41px;
+        padding-top: 44px;
     }
     #contact p {
         font-size: 1.6rem;
         text-align: left;
-        padding-top: 43px;
-        padding-bottom: 34px;
+        padding-top: 45px;
+        padding-bottom: 36px;
         line-height: 1.88;
     }
     .form_row {
