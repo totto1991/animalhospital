@@ -1,8 +1,10 @@
 @charset "utf-8";
 
-/* 全体 */
+/* -----------
+base
+----------- */
 html {
-    font-size: 62.5%;
+    font-size: 10px;
     scroll-behavior: smooth;
 }
 
@@ -22,7 +24,20 @@ a,h3,p,label,h4 {
     background-color: #505050;
 }
 
-/* 共通 */
+/* -----------
+common
+----------- */
+@media (max-width: 767px) {
+    .pc {
+        display: none !important;
+    }
+}
+@media (min-width: 768px) {
+    .sp {
+        display: none !important;
+    }
+}
+
 img {
     display: block;
 }
@@ -61,61 +76,60 @@ a:hover {
 }
 
 /* ヘッダー */
-header {
-    max-width: 1080px;
-    padding-right: 60px;
-    padding-left: 99px;
+.header {
+    width: 100%;
+    height: 5rem;
+    background: #FFF;
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    height: 50px;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+}
+.header .inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000;
-    background-color: #FFFFFF;
+    padding-left: calc(99 / 1080 * 100vw);
+    padding-right: calc(60 / 1080 * 100vw);
+    width: 1080px;
+    max-width: 1080px;
 }
-header a {
-    display: inline-block;
+@media (max-width:767px) {
+    .header .inner {
+        padding-left: calc(20 / 375 * 100vw);
+    }
 }
-.title_nav_btn {
-    margin-left: 0;
-    font-weight: bold;
-    display: flex !important;
+.header-logo {
+    display: flex;
     align-items: center;
-    height: 50px;
-
+    gap: 0.95rem;
 }
-.title_nav_btn img {
-    height: 100%;
+.header-logo__img {
+    width: 2.55rem;
+    height: auto;
 }
-.title_nav_btn p {
-    margin: 0;
-    display: block;
+.header-logo__name {
     font-size: 1.8rem;
-    height: 100%;
+    line-height: calc(33 / 18);
+    height: 5rem;
     display: flex;
     align-items: center;
-    padding-left: 9.5px;
-    line-height: 1.83;
 }
-.nav_list {
+@media (max-width:767px) {
+    .header-logo__name {
+        font-size: 2rem;
+        line-height: calc(33 / 20);
+    }
+}
+.header__nav ul {
     display: flex;
-    justify-content: flex-end;
+    column-gap: 1rem;
+}
+.header__nav ul li a {
+    display: block;
+    height: 5rem;
+    line-height: calc(50 / 14);
     font-size: 1.4rem;
-    font-weight: bold;
-    align-items: center;
-    height: 50px;
-    gap: 10px;
-    padding-right: 0;
-}
-.nav_list li {
-    height: 50px;
-}
-.nav_list li a {
-    line-height: 3.57;
 }
 
 /* FV/main */
@@ -204,7 +218,7 @@ header a {
 .strengths_item {
     display: flex;
     align-items: center;
-    gap: 4.07vw;
+    column-gap: calc(45 / 880 * 100%);
 }
 .reverse {
     flex-direction: row-reverse;
@@ -243,16 +257,35 @@ header a {
     margin-inline: auto;
     padding-inline: 30px;
 }
+@media (max-width:767px) {
+    .services_inner {
+        margin-inline: auto;
+        padding-inline: 2rem;
+    }
+}
 #services .section_title {
-    padding-top: 68px;
+    padding-top: 6.8rem;
+}
+@media (max-width:767px) {
+    #services .section_title {
+        padding-top: 4.6rem;
+    }
 }
 .service_list {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     flex-wrap: wrap;
-    gap: 50px;
-    padding-top: 50px;
-    padding-bottom: 59px;
+    column-gap: calc(50 / 880 * 100%);
+    row-gap: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5.9rem;
+}
+@media (max-width:767px) {
+    .service_list {
+        padding-top: 4.7rem;
+        padding-bottom: 3.9rem;
+        gap: 4.1rem;
+    }
 }
 .service_content {
     width: calc(260 / 880 * 100%);
@@ -267,17 +300,29 @@ header a {
 }
 .service_content h3 {
     text-align: center;
-    padding-top: 18px;
+    padding-top: 1.8rem;
     color: #505050;
     font-size: 2rem;
     font-weight: 700;
-    line-height: 1.25;
+    line-height: calc(25 / 20);
+}
+@media (max-width:767px) {
+    .service_content h3 {
+        padding-top: 2.9rem;
+        line-height: calc(30 / 20);
+    }
 }
 .service_content p {
     font-size: 1.7rem;
     font-weight: 500;
-    line-height: 1.76;
-    padding-top: 8px;
+    line-height: calc(30 / 17);
+    padding-top: 0.8rem;
+}
+@media (max-width:767px) {
+    .service_content p {
+        padding-top: 0.7rem;
+        letter-spacing: -0.1rem;
+    }
 }
 
 /* お知らせ */
@@ -483,13 +528,31 @@ h3.access_hospital_name {
 
 /* フッター */
 .footer_box {
-    padding-top: 66px;
-    padding-bottom: 70px;
+    padding-top: 6.6rem;
+    padding-bottom: 7rem;
+}
+@media (max-width:767px) {
+    .footer_box {
+        margin-inline: auto;
+        padding-inline: 2rem;
+        padding-top: 4.7rem;
+        padding-bottom: 5rem;
+    }
 }
 footer a,footer p {
     color: #FFFFFF;
     font-size: 2rem;
-    line-height: 1.65;
+    line-height: calc(33 / 20);
+}
+@media (max-width:767px) {
+    .footer_nav a {
+        font-size: 1.8rem;
+    }
+}
+@media (max-width:374px) {
+    .footer_nav a {
+        font-size: 1.7rem;
+    }
 }
 .footer_nav {
     display: flex;
@@ -497,25 +560,55 @@ footer a,footer p {
     gap: 14px;
     max-width: 737px;
     margin: 0 auto;
-    padding-bottom: 19px;
+    padding-bottom: 1.9rem;
     position: relative;
 }
-.footer-border {
-    height: 1px;
-    background-color: #FFFFFF;
-    max-width: 737px;
-    margin: 0 auto;
+@media (max-width:767px) {
+    .footer_nav {
+        max-width: 37.3rem;
+        flex-wrap: wrap;
+        row-gap: 0;
+        column-gap: 2rem;
+        padding-bottom: 2.2rem;
+    }
+}
+.footer_nav::before {
+    content: '';
+    width: 100%;
+    height: 0.1rem;
+    background: #FFFFFF;
+    position: absolute;
+    top: 100%;
 }
 .copyright {
     text-align: center;
-    padding-top: 27px;
+    padding-top: 2.7rem;
+}
+@media (max-width:767px) {
+    .copyright {
+        padding-top: 2rem;
+    }
+    .copyright p {
+        font-size: 1.6rem;
+        word-break: keep-all;
+    }
+}
+@media (max-width:374px) {
+    .copyright p {
+        font-size: 1.5rem;
+    }
 }
 .sns-area {
-    padding-top: 8px;
+    padding-top: 0.8rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    gap: 1.2rem;
+}
+@media (max-width:767px) {
+    .sns-area {
+        padding-top: 3.3rem;
+    }
 }
 .sns-area a {
     display: inline-block;
@@ -525,14 +618,6 @@ footer a,footer p {
 .sns-area a img {
     width: 22px;
     height: 22px;
-}
-
-/* 非表示 */
-.address br {
-    display: none;
-}
-.phone_sp_only {
-    display: none;
 }
 
 @media (min-width: 600px) and (max-width: 970px) {
@@ -562,24 +647,6 @@ footer a,footer p {
 
 /* SP版 */
 @media (max-width:767px) {
-    /* ヘッダー */
-    .title {
-        padding-left: 20px;
-    }
-    header {
-        padding-left: 0;
-    }
-    .header_nav {
-        display: none;
-    }
-    .title_nav_btn {
-        font-size: 2rem;
-        margin-left: 20px;
-    }
-    .title_nav_btn p {
-        font-size: 2rem;
-    }
-
     /* FV/main */
     .top_message {
         width: 82.933vw;
@@ -678,30 +745,6 @@ footer a,footer p {
         padding-top: 8px;
     }
     
-    /* サービス */
-    .services_inner_sp {
-        margin-inline: auto;
-        padding-inline: 20px;
-    }
-    .service_list {
-        display: flex;
-        flex-direction: column;
-        padding-top: 47px;
-        padding-bottom: 39px;
-        gap: 41px;
-    }
-    #services .section_title {
-        padding-top: 46px;
-    }
-    .service_content h3 {
-        padding-top: 29px;
-        line-height: 1.5;
-    }
-    .service_content p {
-        padding-top: 7px;
-        letter-spacing: -1px;
-    }
-
     /* お知らせ */
     .notices_inner_sp {
         margin-inline: auto;
@@ -847,37 +890,6 @@ footer a,footer p {
     .contact_form {
         padding-bottom: 50px;
     }
-
-    /* フッター */
-    .footer_box {
-        margin-inline: auto;
-        padding-inline: 20px;
-    }
-    .footer_nav {
-        flex-wrap: wrap;
-        row-gap: 0;
-        column-gap: 20px;
-        padding-bottom: 22px;
-        margin-left: -15px;
-        margin-right: -15px;
-    }
-    .footer_nav a {
-        font-size: 1.8rem;
-    }
-    .footer_box {
-        padding-top: 47px;
-        padding-bottom: 50px;
-    }
-    .copyright {
-        padding-top: 20px;
-    }
-    .copyright p {
-        font-size: 1.6rem;
-        word-break: keep-all;
-    }
-    .sns-area {
-        padding-top: 33px;
-    }
 }
 
 /* 最小サイズ */
@@ -896,13 +908,5 @@ footer a,footer p {
     }
     .address br {
         display: inline;
-    }
-
-    /* フッター */
-    .footer_nav a {
-        font-size: 1.7rem;
-    }
-    .copyright p {
-        font-size: 1.5rem;
     }
 }
