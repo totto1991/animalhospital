@@ -50,18 +50,18 @@ h2.section_title {
     font-size: 2.5rem;
     font-weight: 700;
     color: #505050;
-    line-height: 1.2;
+    line-height: calc(36 / 25);
 }
 .section_title::before,
 .section_title::after {
     content: "";
     display: inline-block;
-    width: 25.49px;
-    height: 25px;
+    width: 2.549rem;
+    height: 2.5rem;
     background-image: url("../images/footprint_1.svg");
     background-size: cover;
     vertical-align: middle;
-    margin: 0 20px;
+    margin: 0 2rem;
 }
 a {
     transition: opacity 0.5s ease;
@@ -71,8 +71,8 @@ a:hover {
     opacity: 0.5;
 }
 .footprint1 {
-    width: 25.49px;
-    height: 25px;
+    width: 2.549rem;
+    height: 2.5rem;
 }
 
 /* ヘッダー */
@@ -126,111 +126,226 @@ a:hover {
     column-gap: 1rem;
 }
 .header__nav ul li a {
-    display: block;
+    display: flex;
+    align-items: center;
     height: 5rem;
-    line-height: calc(50 / 14);
+    line-height: calc(33 / 14);
     font-size: 1.4rem;
 }
 
 /* FV/main */
 #top {
     position: relative;
-    padding-top: 50px;
+    padding-top: 5rem;
 }
 .top_img {
     width: 100%;
     height: auto;
 } 
 .top_message {
-    width: 45.556vw;
-    height: 19.444vw;
+    width: calc(492 / 1080 * 100vw);
+    height: calc(210 / 1080 * 100vw);
     position: absolute;
     background-color: rgba(255, 255, 255, 0.702);
-    top: 18.704vw;
-    padding-top: 2.129vw;
-    padding-left: 9.1667vw;
+    top: calc(202 / 1080 * 100vw);
+    padding-top: calc(23 / 1080 * 100vw);
+    padding-left: calc(99 / 1080 * 100vw);
+}
+@media (max-width: 767px) {
+    .top_message {
+        width: calc(311 / 375 * 100vw);
+        height: calc(148 / 375 * 100vw);
+        top: auto;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding-top: calc(18 / 375 * 100vw);
+        padding-left: calc(20 / 375 * 100vw);
+    }
 }
 .top_message h1 {
-    font-size: 2.315vw;
+    font-size: calc(25 / 1080 * 100vw);
     font-weight: 700;
     color: #505050;
-    line-height: 1.44;
+    line-height: calc(36 / 25);
+}
+@media (max-width: 767px) {
+    .top_message h1 {
+        font-size: calc(20 / 375 * 100vw);
+        line-height: calc(29 / 20);
+    }
 }
 .top_message h1 span {
-    font-size: 3.704vw;
-    line-height: 1.5;
+    font-size: calc(40 / 1080 * 100vw);
+    line-height: calc(60 / 40);
     color: #0D96A0;
-    padding-top: 8px;
+    padding-top: 0.8rem;
     display: inline-block;
+}
+@media (max-width: 767px) {
+    .top_message h1 span {
+        font-size: calc(30 / 375 * 100vw);
+        line-height: calc(40 / 30);
+        padding-top: 0.7rem;
+    }
 }
 
 /* ご挨拶/greeting */
 #greeting {
-    scroll-margin-top: 50px;
+    scroll-margin-top: 5rem;
 }
 .greeting_inner {
     max-width: 960px;
     margin-inline: auto;
-    padding-inline: 60px;
+    padding-inline: 6rem;
     position: relative;
+}
+@media (max-width: 767px) {
+    .greeting_inner_sp {
+        margin-inline: auto;
+        padding-inline: 2rem;
+    }
 }
 #greeting h2 {
     text-align: center;
-    padding-top: 60px;
+    padding-top: 6rem;
     font-size: 3rem;
     font-weight: 700;
-    line-height: 1.67;
+    line-height: calc(50 / 30);
     color: #0D96A0;
+}
+@media (max-width: 767px) {
+    #greeting h2 {
+        padding-top: 4.9rem;
+        font-size: 2.5rem;
+        line-height: calc(35 / 25);
+    }
+    #greeting h2 span {
+        display: block;
+    }
 }
 #greeting p {
     font-size: 1.8rem;
     font-weight: 500;
     text-align: center;
-    line-height: 1.83;
-    padding-top: 15px;
-    padding-bottom: 60px;
+    line-height: calc(33 / 18);
+    padding-top: 1.5rem;
+    padding-bottom: 6rem;
+}
+@media (min-width: 600px) and (max-width: 970px) {
+    .greeting_inner p span {
+        display: inline-block;
+    }
+}
+@media (max-width: 767px) {
+    #greeting p {
+        font-size: 1.6rem;
+        line-height: calc(30 / 16);
+        text-align: left;
+        padding-top: 1.7rem;
+        padding-bottom: 3.9rem;
+    }
 }
 #greeting img {
     position: absolute;
-    right: 16px;
-    bottom: 34px;
+    right: 1.624rem;
+    bottom: 3.388rem;
+}
+@media (max-width: 767px) {
+    #greeting img {
+        width: 6.835rem;
+        height: 6.294rem;
+        right: 2.955rem;
+        bottom: 4.657rem;
+    }
 }
 
 /* 強み */
 #strengths {
-    scroll-margin-top: 50px;
+    scroll-margin-top: 5rem;
 }
 .strengths_inner {
     max-width: 940px;
     margin-inline: auto;
-    padding-inline: 30px;
+    padding-inline: 3rem;
+}
+@media (max-width: 767px) {
+    .strengths_inner_sp {
+        margin-inline: auto;
+        padding-inline: 2rem;
+    }
 }
 #strengths .section_title {
-    padding-top: 69px;
+    padding-top: 6.4rem;
+}
+@media (max-width: 767px) {
+    #strengths .section_title {
+        padding-top: 5.1rem;
+    }
 }
 .strength_item_list {
-    padding-top: 48px;
-    padding-bottom: 67px;
+    padding-top: 4.8rem;
+    padding-bottom: 6.8rem;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    row-gap: 5rem;
+}
+@media (max-width: 767px) {
+    .strength_item_list {
+        padding-top: 4.2rem;
+        padding-bottom: 3.3rem;
+        row-gap: 4.2rem;
+    }
 }
 .strengths_item {
     display: flex;
     align-items: center;
     column-gap: calc(45 / 880 * 100%);
 }
+@media (max-width: 767px) {
+    .strengths_item {
+        flex-direction: column-reverse;
+        row-gap: 2.6rem;
+    }
+}
 .reverse {
     flex-direction: row-reverse;
+}
+@media (max-width: 767px) {
+    .reverse {
+        flex-direction: column-reverse;
+    }
+    .reverse .strength_text h3 {
+        padding-left: 0;
+    }
+    .reverse .strength_text p {
+        padding-left: 0;
+    }
 }
 .strength_text {
     flex: 1;
 }
+@media (max-width: 767px) {
+    .strength_text {
+        width: 100%;
+        padding-right: 0;
+        padding-top: 0;
+        line-height: calc(30 / 16);
+    }
+}
 .strength_text h3 {
     font-size: 2.2rem;
-    line-height: 1.5;
+    line-height: calc(33 / 22);
     font-weight: 700;
     color: #505050;
+}
+@media (max-width: 767px) {
+    .strength_text h3 {
+        text-align: center;
+        font-weight: 700;
+        line-height: calc(30 / 20);
+        font-size: 2rem;
+    }
 }
 .strength_text h3 span {
     display: inline-block;
@@ -238,24 +353,41 @@ a:hover {
 .strength_text p {
     font-size: 1.8rem;
     font-weight: 500;
-    padding-top: 19px;
-    line-height: 1.83;
+    padding-top: 1.9rem;
+    line-height: calc(33 / 18);
+}
+@media (max-width: 767px) {
+    .strength_text p {
+        font-size: 1.6rem;
+        padding-top: 0.8rem;
+        line-height: calc(30 / 16);
+    }
 }
 .strength_img_area {
     width: 50%;
 }
+@media (max-width: 767px) {
+    .strength_img_area {
+        width: 100%;
+    }
+}
 .strengths_img {
     width: 100%;
+}
+@media (max-width: 767px) {
+    .strength_img {
+        width: 100%;
+    }
 }
 
 /* サービス */
 #services {
-    scroll-margin-top: 50px;
+    scroll-margin-top: 5rem;
 }
 .services_inner {
     max-width: 940px;
     margin-inline: auto;
-    padding-inline: 30px;
+    padding-inline: 3rem;
 }
 @media (max-width:767px) {
     .services_inner {
@@ -264,27 +396,30 @@ a:hover {
     }
 }
 #services .section_title {
-    padding-top: 6.8rem;
+    padding-top: 6.3rem;
 }
 @media (max-width:767px) {
     #services .section_title {
-        padding-top: 4.6rem;
+        padding-top: 4.5rem;
     }
+}
+#services .section_title::before,
+#services .section_title::after {
+    margin: 0 1.6rem;
 }
 .service_list {
     display: flex;
     justify-content: left;
     flex-wrap: wrap;
     column-gap: calc(50 / 880 * 100%);
-    row-gap: 5rem;
-    padding-top: 5rem;
+    padding-top: 4.8rem;
     padding-bottom: 5.9rem;
 }
 @media (max-width:767px) {
     .service_list {
-        padding-top: 4.7rem;
+        padding-top: 4.4rem;
         padding-bottom: 3.9rem;
-        gap: 4.1rem;
+        row-gap: 3.9rem;
     }
 }
 .service_content {
@@ -300,7 +435,7 @@ a:hover {
 }
 .service_content h3 {
     text-align: center;
-    padding-top: 1.8rem;
+    padding-top: 1.9rem;
     color: #505050;
     font-size: 2rem;
     font-weight: 700;
@@ -308,7 +443,7 @@ a:hover {
 }
 @media (max-width:767px) {
     .service_content h3 {
-        padding-top: 2.9rem;
+        padding-top: 3rem;
         line-height: calc(30 / 20);
     }
 }
@@ -320,82 +455,168 @@ a:hover {
 }
 @media (max-width:767px) {
     .service_content p {
+        font-size: 1.6rem;
         padding-top: 0.7rem;
-        letter-spacing: -0.1rem;
+        line-height: calc(30 / 16);
     }
 }
 
 /* お知らせ */
 #notices {
-    scroll-margin-top: 50px;
+    scroll-margin-top: 5rem;
 }
 .notices_inner {
     max-width: 940px;
     margin-inline: auto;
-    padding-inline: 30px;
+    padding-inline: 3rem;
+}
+@media (max-width: 767px) {
+    .notices_inner_sp {
+        margin-inline: auto;
+        padding-inline: 2rem;
+    }
 }
 #notices .section_title {
-    padding-top: 67px;
+    padding-top: 6.3rem;
+}
+@media (max-width: 767px) {
+    #notices .section_title {
+        padding-top: 4.3rem;
+    }
 }
 .notice_list {
-    margin-top: 49px;
-    padding-bottom: 68px;
+    margin-top: 4.6rem;
+    padding-bottom: 6.8rem;
 }
-.notice_border {
-    border-top: 1px solid #707070;
-}
-.notice_border:last-child {
-    border-bottom: 1px solid #707070;
+@media (max-width: 767px) {
+    .notice_list {
+        padding-bottom: 5rem;
+    }
 }
 .notice_content {
     display: flex;
-    padding-top: 17px;
-    padding-bottom: 17px;
     align-items: center;
+    position: relative;
 }
+@media (max-width: 767px) {
+    .notice_content {
+        flex-direction: column;
+        padding-top: 2.8rem;
+        padding-bottom: 2.8rem;
+        padding-left: 1rem;
+        gap: 0;
+    }
+}
+.notice_content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    border-top: 0.1rem solid #707070;
+    width: 100%;
+}
+.notice_content:last-child::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    border-top: 0.1rem solid #707070;
+    width: 100%;
+}
+
 .notice_date {
     font-size: 1.7rem;
-    line-height: 1.47;
-    width: 110.5px;
-    padding-left: 18.5px;
+    line-height: calc(25 / 17);
+    width: 11.05rem;
+    padding-top: 1.8rem;
+    padding-bottom: 1.7rem;
+    padding-left: 1.85rem;
     flex-shrink: 0;
 }
+@media (max-width: 767px) {
+    .notice_date {
+        width: 100%;
+        padding-left: 0px;
+        padding-top: 0;
+        padding-bottom: 0.2rem;
+    }
+}
 h3.notice_title {
-    width: 234px;
-    padding-left: 25px;
+    width: 23.4rem;
+    padding-left: 2.5rem;
     flex-shrink: 0;
     font-size: 2rem;
     font-weight: 700;
-    line-height: 1.25;
+    line-height: calc(25 / 20);
     color: #0D96A0;
+}
+@media (max-width: 767px) {
+    h3.notice_title {
+        width: 100%;
+        padding-top: 0;
+        padding-bottom: 0.6rem;
+        padding-left: 0;
+    }
 }
 .notice_text {
     font-size: 1.7rem;
     font-weight: 500;
-    line-height: 1.47;
-    max-width: 534.5px;
+    line-height: calc(30 / 17);
+    max-width: 53.45rem;
     flex: 1;
+}
+@media (max-width: 767px) {
+    .notice_text {
+        font-size: 1.6rem;
+        line-height: calc(24 / 16);
+        width: 100%;
+        padding-top: 0;
+        max-width: 1080px;
+    }
 }
 
 /* アクセス */
 #access {
-    scroll-margin-top: 50px;
+    scroll-margin-top: 5rem;
 }
 .access_inner {
     max-width: 940px;
     margin-inline: auto;
-    padding-inline: 30px;
+    padding-inline: 3rem;
+}
+@media (max-width: 767px) {
+    .access_inner_sp {
+        margin-inline: auto;
+        padding-inline: 2rem;
+    }
 }
 #access .section_title {
-    padding-top: 67px;
+    padding-top: 6.3rem;
+}
+@media (max-width: 767px) {
+    #access .section_title {
+        padding-top: 4.3rem;
+    }
 }
 .access_content {
     display: flex;
-    padding-top: 46px;
-    padding-bottom: 70px;
+    padding-top: 4.6rem;
+    padding-bottom: 7rem;
+}
+@media (max-width: 767px) {
+    .access_content {
+        flex-direction: column;
+        padding-top: 4.6rem;
+        padding-bottom: 5rem;
+        row-gap: 3rem;
+    }
 }
 .map_wrapper {
     width: 50%;
+}
+@media (max-width: 767px) {
+    .map_wrapper {
+        aspect-ratio: 335/222;
+        width: 100%;
+    }
 }
 .access_map {
     width: 100%;
@@ -403,108 +624,255 @@ h3.notice_title {
 }
 .access_text {
     width: 50%;
-    padding-left: 46px;
+    padding-left: 4.6rem;
+}
+@media (max-width: 767px) {
+    .access_text {
+        width: 100%;
+        padding-left: 0;
+    }
 }
 h3.access_hospital_name {
     font-size: 2.2rem;
     font-weight: 700;
     color: #505050;
-    line-height: 1.5;
+    line-height: calc(33 / 22);
 }
 .access_text_p {
     font-size: 1.8rem;
     font-weight: 500;
 }
 .address {
-    padding-top: 15px;
-    line-height: 1.5;
+    padding-top: 1.5rem;
+    line-height: calc(27 / 18);
+}
+@media (max-width: 767px) {
+    .address {
+        font-size: 1.6rem;
+        line-height: calc(24 / 16);
+        padding-top: 1.2rem;
+    }
+}
+@media (max-width: 890px) {
+    .address br {
+        display: inline;
+    }
+}
+@media (max-width: 767px) {
+    .address br {
+        display: none;
+    }
+}
+@media (max-width:374px) {
+    .address br {
+        display: inline;
+    }
 }
 .phone {
-    padding-top: 14px;
+    padding-top: 1.4rem;
     display: flex;
     align-items: baseline;
-    line-height: 1.5;
+    line-height: calc(27 / 18);
+}
+@media (max-width: 767px) {
+    .phone {
+        font-size: 1.6rem;
+        padding-top: 0.6rem;
+        line-height: calc(27 / 16);
+    }
 }
 .phone_number {
     font-size: 2.5rem;
     color: #0D96A0;
     font-weight: bold;
 }
+@media (max-width: 767px) {
+    .phone_number a {
+        color: #0D96A0;
+    }
+}
 .phone_pc_only {
-    line-height: 1.6;
+    line-height: calc(40 / 25);
+}
+@media (max-width: 767px) {
+    .phone_pc_only {
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .phone_sp_only {
+        display: inline-block;
+        line-height: calc(40 / 25);
+    }
 }
 .email {
-    padding-top: 11px;
-    padding-bottom: 26px;
-    line-height: 1.5;
+    padding-top: 0.8rem;
+    padding-bottom: 2.7rem;
+    line-height: calc(27 / 18);
+}
+@media (max-width: 767px) {
+    .email {
+        font-size: 1.6rem;
+        padding-top: 0.7rem;
+        padding-bottom: 1.4rem;
+        line-height: calc(24 / 16);
+    }
 }
 .email_link {
     font-weight: 500;
 }
 .access_border {
-    border-top: 1px solid #707070;
-    border-bottom: 1px solid #707070;
-    padding-top: 16px;
-    padding-bottom: 10px;
-    margin-left: 5px;
+    border-top: 0.1rem solid #707070;
+    border-bottom: 0.1rem solid #707070;
+    padding-top: 1.5rem;
+    padding-bottom: 1.4rem;
+    margin-left: 0.4rem;
+}
+@media (max-width: 767px) {
+    .access_border {
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+        margin-left: 0;
+    }
 }
 .opening_hour {
-    line-height: 2.22;
+    line-height: calc(40 / 18);
+}
+@media (max-width: 767px) {
+    .opening_hour {
+        font-size: 1.6rem;
+        line-height: calc(30 / 16);
+    }
 }
 
 /* お問い合わせ */
 #contact {
-    scroll-margin-top: 50px;
+    scroll-margin-top: 5rem;
 }
 #contact .section_title {
-    padding-top: 63px;
+    padding-top: 6.2rem;
+}
+@media (max-width: 767px) {
+    #contact .section_title {
+        padding-top: 4.3rem;
+    }
+}
+@media (max-width:374px) {
+    #contact .section_title::before,
+    #contact .section_title::after {
+        content: "";
+        display: inline-block;
+        width: 2.549rem;
+        height: 2.5rem;
+        background-image: url("../images/footprint_1.svg");
+        background-size: cover;
+        vertical-align: middle;
+        margin: 0 1.2rem;
+    }
 }
 .contact_inner {
     max-width: 940px;
     margin-inline: auto;
-    padding-inline: 30px;
+    padding-inline: 3rem;
+}
+@media (max-width: 767px) {
+    .contact_inner_sp {
+        margin-inline: auto;
+        padding-inline: 2rem;
+    }
 }
 #contact p {
     text-align: center;
     font-size: 1.7rem;
     font-weight: 500;
-    line-height: 1.76;
-    padding-top: 30px;
-    padding-bottom: 43px;
+    line-height: calc(30 / 17);
+    padding-top: 2.5rem;
+    padding-bottom: 3.9rem;
+}
+@media (max-width: 767px) {
+    #contact p {
+        font-size: 1.6rem;
+        text-align: left;
+        padding-top: 4.3rem;
+        padding-bottom: 3.4rem;
+        line-height: calc(30 / 16);
+    }
 }
 .contact_form {
-    padding-bottom: 80px;
+    padding-bottom: 8rem;
+}
+@media (max-width: 767px) {
+    .contact_form {
+        padding-bottom: 5rem;
+    }
 }
 .form_row{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 0px;
-    margin-bottom: 30px;
+    gap: 0;
+    margin-bottom: 3rem;
+}
+@media (max-width: 767px) {
+    .form_row {
+        flex-direction: column;
+        row-gap: 0.2rem;
+        margin-bottom: 1.7rem;
+    }
 }
 .form_content {
     align-items: flex-start;
 }
 .form_row label {
-    width: 20%;
+    width: 16.9rem;
     font-size: 2rem;
-    line-height: 1.65;
+    line-height: calc(33 / 20);
+}
+@media (max-width: 767px) {
+    .form_row label {
+        width: 100%;
+        font-size: 1.8rem;
+        line-height: calc(33 / 18);
+    }
 }
 .form_row input,
 .form_row textarea {
     background-color: #FFFFFF;
-    width: 711px;
-    padding: 10px;
+    width: 71.1rem;
+    padding: 1rem;
     font-size: 1.6rem;
 }
+@media (max-width: 890px) {
+    .form_row input,
+    .form_row textarea {
+        margin-left: auto;
+        width: 78%;
+    }
+}
+@media (max-width: 767px) {
+    .form_row input,
+    .form_row textarea {
+        width: 100%;
+    }
+}
 .form_row input {
-    height: 40px;
+    height: 4rem;
+}
+@media (max-width: 767px) {
+    .form_row input {
+        height: 5rem;
+    }
+}
+@media (max-width: 767px) {
+    .form_row .label_email {
+        font-size: 1.8rem;
+    }
 }
 .form_row textarea {
-    height: 300px;
+    height: 30rem;
     resize: none;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     line-height: 1.625;
 }
 .btn_submit {
@@ -513,14 +881,23 @@ h3.access_hospital_name {
 .btn_submit input[type="submit"] {
     background-color: #0D96A0;
     color: #FFFFFF;
-    width: 200px;
-    height: 50px;
+    width: 20rem;
+    height: 5rem;
     cursor: pointer;
     font-size: 2.5rem;
     font-weight: bold;
-    border-radius: 10px;
-    margin-top: 20px;
+    border-radius: 1rem;
+    margin-top: 2rem;
     transition: all 0.5s ease;
+}
+@media (max-width: 767px) {
+    .btn_submit input[type="submit"] {
+        width: 100%;
+        max-width: 335px;
+        height: 4.1rem;
+        font-size: 2rem;
+        margin-top: 3.3rem;
+    }
 }
 .btn_submit input[type="submit"]:hover {
     background-color: #40C2CC;
@@ -535,7 +912,7 @@ h3.access_hospital_name {
     .footer_box {
         margin-inline: auto;
         padding-inline: 2rem;
-        padding-top: 4.7rem;
+        padding-top: 4.5rem;
         padding-bottom: 5rem;
     }
 }
@@ -547,6 +924,7 @@ footer a,footer p {
 @media (max-width:767px) {
     .footer_nav a {
         font-size: 1.8rem;
+        line-height: calc(33 / 18);
     }
 }
 @media (max-width:374px) {
@@ -557,19 +935,18 @@ footer a,footer p {
 .footer_nav {
     display: flex;
     justify-content: center;
-    gap: 14px;
-    max-width: 737px;
+    gap: 1.4rem;
+    max-width: 73.7rem;
     margin: 0 auto;
-    padding-bottom: 1.9rem;
+    padding-bottom: 2.1rem;
     position: relative;
 }
 @media (max-width:767px) {
     .footer_nav {
-        max-width: 37.3rem;
         flex-wrap: wrap;
         row-gap: 0;
         column-gap: 2rem;
-        padding-bottom: 2.2rem;
+        padding-bottom: 2.1rem;
     }
 }
 .footer_nav::before {
@@ -586,11 +963,12 @@ footer a,footer p {
 }
 @media (max-width:767px) {
     .copyright {
-        padding-top: 2rem;
+        padding-top: 1.5rem;
     }
     .copyright p {
         font-size: 1.6rem;
         word-break: keep-all;
+        line-height: calc(33 / 16);
     }
 }
 @media (max-width:374px) {
@@ -607,7 +985,7 @@ footer a,footer p {
 }
 @media (max-width:767px) {
     .sns-area {
-        padding-top: 3.3rem;
+        padding-top: 2.8rem;
     }
 }
 .sns-area a {
@@ -616,297 +994,6 @@ footer a,footer p {
     line-height: 1;
 }
 .sns-area a img {
-    width: 22px;
-    height: 22px;
-}
-
-@media (min-width: 600px) and (max-width: 970px) {
-    /* ご挨拶 */
-    .greeting_inner p span {
-        display: inline-block;
-    }
-}
-
-@media (max-width: 890px) {
-    /* アクセス */
-    .address br {
-        display: inline;
-    }
-
-    /* お問い合わせ */
-    .form_row label {
-    width: 22%;
-    }
-    .form_row input,
-    .form_row textarea {
-        margin-left: auto;
-        width: 78%;
-    }
-}
-
-
-/* SP版 */
-@media (max-width:767px) {
-    /* FV/main */
-    .top_message {
-        width: 82.933vw;
-        height: 39.467vw;
-        top: auto;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        padding-top: 4.8vw;
-        padding-left: 5.333vw;
-    }
-    .top_message h1 {
-        font-size: 5.333vw;
-    }
-    .top_message h1 span {
-        font-size: 8vw;
-        line-height: 1.33;
-        padding-top: 7px;
-    }
-
-    /* ご挨拶/greeting */
-    .greeting_inner_sp {
-        margin-inline: auto;
-        padding-inline: 20px;
-    }
-    #greeting h2 {
-        padding-top: 49px;
-        font-size: 2.5rem;
-        line-height: 1.4;
-    }
-    #greeting h2 span {
-        display: block;
-    }
-    #greeting p {
-        font-size: 1.6rem;
-        line-height: 1.88;
-        text-align: left;
-        padding-top: 17px;
-        padding-bottom: 37px;
-    }
-    #greeting img {
-        width: 69px;
-        height: 63px;
-        right: 30px;
-        bottom: 43px;
-    }
-
-    /* 強み */
-    .strengths_inner_sp {
-        margin-inline: auto;
-        padding-inline: 20px;
-    }
-    #strengths .section_title {
-        padding-top: 54px;
-    }
-    .strength_item_list {
-        padding-top: 46px;
-        padding-bottom: 33px;
-        gap: 42px;
-    }
-    .strengths_item {
-        flex-direction: column-reverse;
-        gap: 29px;
-    }
-    .strength_text {
-        width: 100%;
-    }
-    .strength_img_area {
-        width: 100%;
-    }
-    .strength_img {
-        width: 100%;
-    }
-    .strength_text {
-        padding-right: 0;
-        padding-top: 0;
-        line-height: 1.88;
-    }
-    .strength_text span {
-        display: block;
-    }
-    .reverse .strength_text h3 {
-        padding-left: 0;
-    }
-    .reverse .strength_text p {
-        padding-left: 0;
-    }
-    .strength_text h3 {
-        text-align: center;
-        font-weight: 700;
-        line-height: 1.5;
-        font-size: 2rem;
-    }
-    .strength_text p {
-        font-size: 1.6rem;
-        padding-top: 8px;
-    }
-    
-    /* お知らせ */
-    .notices_inner_sp {
-        margin-inline: auto;
-        padding-inline: 20px;
-    }
-    #notices .section_title {
-        padding-top: 47px;
-    }
-    .notice_list {
-        padding-bottom: 50px;
-    }
-    .notice_content {
-        flex-direction: column;
-        padding-top: 28px;
-        padding-bottom: 27px;
-        padding-left: 10px;
-        gap: 0;
-    }
-    .notice_date {
-        width: 100%;
-        padding-left: 0px;
-    }
-    h3.notice_title {
-        width: 100%;
-        padding-top: 2px;
-        padding-left: 0;
-    }
-    .notice_text {
-        font-size: 1.6rem;
-        line-height: 1.5;
-        width: 100%;
-        padding-top: 6px;
-        max-width: 1080px;
-    }
-
-    /* アクセス */
-    .access_inner_sp {
-        margin-inline: auto;
-        padding-inline: 20px;
-    }
-    #access .section_title {
-        padding-top: 45px;
-    }
-    .access_content {
-        flex-direction: column;
-        padding-top: 53px;
-        padding-bottom: 50px;
-        gap: 26px;
-    }
-    .map_wrapper {
-        aspect-ratio: 335/222;
-        width: 100%;
-    }
-    .access_map {
-        width: 100%;
-        height: 100%;
-    }
-    .access_hospital_name {
-        font-size: 2.2rem;
-    }
-    .access_text {
-        width: 100%;
-        padding-left: 0;
-    }
-    .address {
-        font-size: 1.6rem;
-        line-height: 1.5;
-        padding-top: 15px;
-    }
-    .address br {
-        display: none;
-    }
-    .phone {
-        font-size: 1.6rem;
-        padding-top: 6px;
-    }
-    .phone_pc_only {
-        display: none;
-    }
-    .phone_sp_only {
-        display: inline-block;
-        line-height: 1.6;
-    }
-    .phone_number a {
-        color: #0D96A0;
-    }
-    .email {
-        font-size: 1.6rem;
-        padding-top: 7px;
-        padding-bottom: 15px;
-    } 
-    .access_border {
-        padding-top: 12px;
-        padding-bottom: 10px;
-        margin-left: 0;
-    }
-    .opening_hour {
-        font-size: 1.6rem;
-        line-height: 1.88;
-    }
-
-    /* お問い合わせ */
-    .contact_inner_sp {
-        margin-inline: auto;
-        padding-inline: 20px;
-    }
-    #contact .section_title {
-        padding-top: 44px;
-    }
-    #contact p {
-        font-size: 1.6rem;
-        text-align: left;
-        padding-top: 45px;
-        padding-bottom: 36px;
-        line-height: 1.88;
-    }
-    .form_row {
-        flex-direction: column;
-        gap: 6px;
-        margin-bottom: 17px;
-    }
-    .form_row label {
-        width: 100%;
-        font-size: 1.8rem;
-    }
-    .form_row .label_email {
-        font-size: 1.8rem;
-    }
-    .form_row input,
-    .form_row textarea {
-        width: 100%;
-    }
-    .form_row input {
-        height: 50px;
-    }
-    .btn_submit input[type="submit"] {
-        width: 100%;
-        max-width: 335px;
-        height: 41px;
-        font-size: 2rem;
-        margin-top: 33px;
-    }
-    .contact_form {
-        padding-bottom: 50px;
-    }
-}
-
-/* 最小サイズ */
-@media (max-width:374px) {
-    /* お問い合わせ */
-    #contact .section_title::before,
-    #contact .section_title::after {
-        content: "";
-        display: inline-block;
-        width: 25.49px;
-        height: 25px;
-        background-image: url("../images/footprint_1.svg");
-        background-size: cover;
-        vertical-align: middle;
-        margin: 0 12px;
-    }
-    .address br {
-        display: inline;
-    }
+    width: 2.2rem;
+    height: 2.2rem;
 }
