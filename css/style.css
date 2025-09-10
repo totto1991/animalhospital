@@ -195,20 +195,22 @@ a:hover {
     scroll-margin-top: 5rem;
 }
 .greeting_inner {
-    max-width: 960px;
+    max-width: 940px;
     margin-inline: auto;
-    padding-inline: 6rem;
+    padding: 6rem 3rem;
     position: relative;
 }
 @media (max-width: 767px) {
     .greeting_inner_sp {
         margin-inline: auto;
+        padding-top: 4.9rem;
+        padding-bottom: 3.9rem;
         padding-inline: 2rem;
     }
 }
 #greeting h2 {
     text-align: center;
-    padding-top: 6rem;
+    margin-bottom: 1.5rem;
     font-size: 3rem;
     font-weight: 700;
     line-height: calc(50 / 30);
@@ -216,9 +218,9 @@ a:hover {
 }
 @media (max-width: 767px) {
     #greeting h2 {
-        padding-top: 4.9rem;
         font-size: 2.5rem;
         line-height: calc(35 / 25);
+        margin-bottom: 1.7rem;
     }
     #greeting h2 span {
         display: block;
@@ -229,22 +231,16 @@ a:hover {
     font-weight: 500;
     text-align: center;
     line-height: calc(33 / 18);
-    padding-top: 1.5rem;
-    padding-bottom: 6rem;
-}
-@media (min-width: 600px) and (max-width: 970px) {
-    .greeting_inner p span {
-        display: inline-block;
-    }
 }
 @media (max-width: 767px) {
     #greeting p {
         font-size: 1.6rem;
         line-height: calc(30 / 16);
         text-align: left;
-        padding-top: 1.7rem;
-        padding-bottom: 3.9rem;
     }
+}
+.greeting_inner p span {
+    display: inline-block;
 }
 #greeting img {
     position: absolute;
@@ -300,7 +296,7 @@ a:hover {
 .strengths_item {
     display: flex;
     align-items: center;
-    column-gap: calc(45 / 880 * 100%);
+    column-gap: calc(44 / 880 * 100%);
 }
 @media (max-width: 767px) {
     .strengths_item {
@@ -362,6 +358,9 @@ a:hover {
         padding-top: 0.8rem;
         line-height: calc(30 / 16);
     }
+}
+.strength_text p span {
+    display: inline-block;
 }
 .strength_img_area {
     width: 50%;
@@ -493,6 +492,12 @@ a:hover {
         padding-bottom: 5rem;
     }
 }
+.notice_content_box {
+    border-top: 0.1rem solid #707070;
+}
+.notice_content_box:last-child {
+    border-bottom: 0.1rem solid #707070;
+}
 .notice_content {
     display: flex;
     align-items: center;
@@ -501,33 +506,16 @@ a:hover {
 @media (max-width: 767px) {
     .notice_content {
         flex-direction: column;
-        padding-top: 2.8rem;
-        padding-bottom: 2.8rem;
+        padding-top: 2.75rem;
+        padding-bottom: 2.75rem;
         padding-left: 1rem;
         gap: 0;
     }
 }
-.notice_content::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    border-top: 0.1rem solid #707070;
-    width: 100%;
-}
-.notice_content:last-child::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    border-top: 0.1rem solid #707070;
-    width: 100%;
-}
-
 .notice_date {
     font-size: 1.7rem;
     line-height: calc(25 / 17);
     width: 11.05rem;
-    padding-top: 1.8rem;
-    padding-bottom: 1.7rem;
     padding-left: 1.85rem;
     flex-shrink: 0;
 }
@@ -562,6 +550,8 @@ h3.notice_title {
     line-height: calc(30 / 17);
     max-width: 53.45rem;
     flex: 1;
+    padding-top: 1.45rem;
+    padding-bottom: 1.45rem;
 }
 @media (max-width: 767px) {
     .notice_text {
@@ -569,6 +559,7 @@ h3.notice_title {
         line-height: calc(24 / 16);
         width: 100%;
         padding-top: 0;
+        padding-bottom: 0;
         max-width: 1080px;
     }
 }
@@ -653,20 +644,8 @@ h3.access_hospital_name {
         padding-top: 1.2rem;
     }
 }
-@media (max-width: 890px) {
-    .address br {
-        display: inline;
-    }
-}
-@media (max-width: 767px) {
-    .address br {
-        display: none;
-    }
-}
-@media (max-width:374px) {
-    .address br {
-        display: inline;
-    }
+.address span {
+    display: inline-block;
 }
 .phone {
     padding-top: 1.4rem;
@@ -869,8 +848,8 @@ h3.access_hospital_name {
     }
 }
 .form_row textarea {
-    height: 30rem;
-    resize: none;
+    min-height: 30rem;
+    resize: vertical;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     line-height: 1.625;
@@ -905,15 +884,12 @@ h3.access_hospital_name {
 
 /* フッター */
 .footer_box {
-    padding-top: 6.6rem;
-    padding-bottom: 7rem;
+    padding: 6.6rem 3rem 7rem;
 }
 @media (max-width:767px) {
     .footer_box {
         margin-inline: auto;
-        padding-inline: 2rem;
-        padding-top: 4.5rem;
-        padding-bottom: 5rem;
+        padding: 4.5rem 2rem 5rem;
     }
 }
 footer a,footer p {
@@ -936,10 +912,12 @@ footer a,footer p {
     display: flex;
     justify-content: center;
     gap: 1.4rem;
+    width: 100%;
     max-width: 73.7rem;
     margin: 0 auto;
     padding-bottom: 2.1rem;
     position: relative;
+    border-bottom: solid #FFF 0.1rem;
 }
 @media (max-width:767px) {
     .footer_nav {
@@ -948,14 +926,6 @@ footer a,footer p {
         column-gap: 2rem;
         padding-bottom: 2.1rem;
     }
-}
-.footer_nav::before {
-    content: '';
-    width: 100%;
-    height: 0.1rem;
-    background: #FFFFFF;
-    position: absolute;
-    top: 100%;
 }
 .copyright {
     text-align: center;
