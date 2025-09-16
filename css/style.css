@@ -6,6 +6,7 @@ base
 html {
     font-size: 10px;
     scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
 }
 
 body {
@@ -103,7 +104,8 @@ a:hover {
 }
 @media (max-width:767px) {
     .header .inner {
-        padding-left: calc(20 / 375 * 100vw);
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 }
 .header-logo {
@@ -171,37 +173,34 @@ a:hover {
         padding-bottom: 1.4rem;
     }
 }
-.top_message h1 {
+.top_message p {
     font-size: 2.5rem;
     font-weight: 700;
     color: #505050;
     line-height: calc(36 / 25);
+    margin-bottom: 0.8rem;
+}
+@media (max-width: 767px) {
+    .top_message p {
+        font-size: 2rem;
+        line-height: calc(29 / 20);
+        margin-bottom: 0.7rem;
+    }
+}
+.top_message h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: calc(60 / 40);
+    color: #0D96A0;
 }
 @media (max-width: 767px) {
     .top_message h1 {
-        font-size: 2rem;
-        line-height: calc(29 / 20);
-    }
-}
-.top_message h1 span {
-    font-size: 4rem;
-    line-height: calc(60 / 40);
-    color: #0D96A0;
-    margin-top: 0.8rem;
-    display: inline-block;
-}
-@media (max-width: 767px) {
-    .top_message h1 span {
         font-size: 3rem;
         line-height: calc(40 / 30);
-        margin-top: 0.7rem;
     }
 }
 
 /* ご挨拶/greeting */
-#greeting {
-    scroll-margin-top: 5rem;
-}
 .greeting_inner {
     max-width: 940px;
     margin: 0 auto;
@@ -270,7 +269,6 @@ a:hover {
 
 /* 強み */
 #strengths {
-    scroll-margin-top: 5rem;
     padding-top: 6.4rem;
     padding-bottom: 6.8rem;
 }
@@ -396,7 +394,6 @@ a:hover {
 
 /* サービス */
 #services {
-    scroll-margin-top: 5rem;
     padding-top: 6.3rem;
     padding-bottom: 5.9rem;
 }
@@ -485,7 +482,6 @@ a:hover {
 
 /* お知らせ */
 #notices {
-    scroll-margin-top: 5rem;
     padding-top: 6.3rem;
     padding-bottom: 6.8rem;
 }
@@ -571,7 +567,6 @@ h3.notice_title {
 
 /* アクセス */
 #access {
-    scroll-margin-top: 5rem;
     padding-top: 6.3rem;
     padding-bottom: 7rem;
 }
@@ -742,7 +737,6 @@ h3.access_hospital_name {
 
 /* お問い合わせ */
 #contact {
-    scroll-margin-top: 5rem;
     padding-top: 6.2rem;
     padding-bottom: 8rem;
 }
@@ -971,7 +965,7 @@ footer a,footer p {
     padding: 0;
     line-height: 1;
 }
-.sns-area a img {
+/* .sns-area a img {
     width: 2.2rem;
     height: 2.2rem;
-}
+} */
