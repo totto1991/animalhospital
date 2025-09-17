@@ -157,12 +157,15 @@ a:hover {
     position: absolute;
     background-color: rgba(255, 255, 255, 0.702);
     top: calc(202 / 550 * 100%);
-    padding: 2.3rem 3.5rem 2.3rem 9.9rem;
+    padding-top: 2.3rem;
+    padding-left: 9.9rem;
+    padding-bottom: 2.3rem;
+    width: 49.2rem;
 }
 @media (max-width: 1000px) {
     .top_message {
         padding-left: 2rem;
-        padding-right: 2.3rem;
+        width: 40.1rem;
     }
 }
 @media (max-width: 767px) {
@@ -171,6 +174,7 @@ a:hover {
         bottom: 0;
         padding-top: 1.8rem;
         padding-bottom: 1.4rem;
+        width: 31.1rem;
     }
 }
 .top_message p {
@@ -937,11 +941,11 @@ footer a,footer p {
 }
 .copyright {
     text-align: center;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.3rem;
 }
 @media (max-width:767px) {
     .copyright {
-        margin-bottom: 2.8rem;
+        margin-bottom: 2.3rem;
     }
     .copyright p {
         font-size: 1.6rem;
@@ -958,14 +962,8 @@ footer a,footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.2rem;
 }
 .sns-area a {
     display: inline-block;
-    padding: 0;
-    line-height: 1;
+    padding: 0.5rem 0.6rem;
 }
-/* .sns-area a img {
-    width: 2.2rem;
-    height: 2.2rem;
-} */
