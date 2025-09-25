@@ -9,290 +9,495 @@
     <meta name="description" content="滑石きたむら動物病院という動物病院のサイトです。">
     <meta name="keywords" content="動物、病院、動物病院">
     <meta name="robots" content="noindex">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Googleフォントをheadタグ内に指定する -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <header>
-        <div class="header">
-            <div class="inner">
-                <a href="#" class="header__logo header-logo">
-                        <img src="images/footprint_1.svg" alt="" class="header-logo__img">
-                        <p class="header-logo__name">滑石きたむら動物病院</p>
-                </a>
+    <div id="container">
+        <!-- header -->
+        <header>
+            <div class="header">
+                <div class="header__logo">
+                    <h1>
+                        <a href="#">
+                            <div class="header__logo-image">
+                                <img src="./images/footprint_1.svg" alt="">
+                            </div>
+                            <div class="header__logo-text">
+                                <span>滑石きたむら動物病院</span>
+                            </div>
+                        </a>
+                    </h1>
+                </div>
                 <div class="header__nav pc">
-                    <ul class="nav_list">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#message">ご挨拶</a>
+                            </li>
+                            <li>
+                                <a href="#strength">強み</a>
+                            </li>
+                            <li>
+                                <a href="#service">サービス</a>
+                            </li>
+                            <li>
+                                <a href="#news">お知らせ</a>
+                            </li>
+                            <li>
+                                <a href="#access">アクセス</a>
+                            </li>
+                            <li>
+                                <a href="#contact">お問い合わせ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    
+        <!-- main -->
+        <main>
+            <div class="main">
+
+                <!-- mv -->
+                <div class="mv">
+                    <div class="mv__image">
+                        <picture>
+                            <source srcset="images/fv_sp.jpg" media="(max-width: 767px)">
+                            <img src="images/fv.jpg" alt="女性スタッフと大型犬が同じ方向を見ている写真" class="top_img">
+                        </picture>
+                    </div>
+                    <div class="mv__contents">
+                        <div class="mv__catch">
+                            <h2>
+                                <span class="mv__catch-first">滑石きたむら動物病院は<br></span>
+                                <span class="mv__catch-second">大切な家族の<br>ホームドクターです</span>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- message -->
+                <section id="message">
+                    <div class="message-sec">
+                        <div class="inner">
+                            <div class="message-sec__title">
+                                <h2>動物たちの健康で<br class="sp">幸せな生活をサポート</h2>
+                            </div>
+                            <div class="message-sec__contents">
+                                <div class="message-sec__text">
+                                    <div class="message-sec__text-deco">
+                                        <img src="./images/footprint_2.svg" alt="">
+                                    </div>
+                                    <p>当院は地域に密着し、皆さまの大切な家族の一員である動物たちの<span class="ib-span">ホームドクターを目指しています。</span><br>緊急時だけではなく、日常のちょっとした不安や違和感などお気軽にご相談ください。<br>動物たちが健康で幸せな生活を送ることができるようサポートいたします。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- strength -->
+                <section id="strength">
+                    <div class="strength-sec section-bg">
+                        <div class="inner">
+                            <div class="strength-sec__title common-title">
+                                <div class="title-icon">
+                                    <img src="./images/footprint_1.svg" alt="">
+                                </div>
+                                <h2>強み</h2>
+                                <div class="title-icon">
+                                    <img src="./images/footprint_1.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="strength-sec__contents">
+                                <div class="strength-sec__items">
+
+                                    <div class="strength-sec__item strength-sec-item">
+                                        <div class="strength-sec-item__content">
+                                            <div class="strength-sec-item__title">
+                                                <h3>経験豊富なスタッフが<br class="sp"><span class="ib-span">24時間365日常駐</span></h3>
+                                            </div>
+                                            <div class="strength-sec-item__text">
+                                                <p>当院は24時間365日いつでも対応できるよう、豊富な経験を持つ獣医師や看護師が約50名体制で常駐しております。</p>
+                                            </div>
+                                        </div>
+                                        <div class="strength-sec-item__image">
+                                            <picture>
+                                                <source srcset="images/about_01_sp.jpg" media="(max-width: 767px)">
+                                                <img src="images/about_01.jpg" alt="24時間体制で常駐している経験豊富なスタッフの写真" class="strengths_img">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="strength-sec__item strength-sec-item">
+                                        <div class="strength-sec-item__content">
+                                            <div class="strength-sec-item__title">
+                                                <h3>エキゾチックアニマルも<span class="ib-span">対応します</span></h3>
+                                            </div>
+                                            <div class="strength-sec-item__text">
+                                                <p>犬・猫だけではなく、ウサギやハムスター、爬虫類や両生類、鳥類などエキゾチックアニマルも対応しております。</p>
+                                            </div>
+                                        </div>
+                                        <div class="strength-sec-item__image">
+                                            <picture>
+                                                <source srcset="images/about_02_sp.jpg" media="(max-width: 767px)">
+                                                <img src="images/about_02.jpg" alt="エキゾチックアニマル（カメレオン）の写真" class="strengths_img">
+                                            </picture>
+                                        </div>
+                                    </div>
+
+                                    <div class="strength-sec__item strength-sec-item">
+                                        <div class="strength-sec-item__content">
+                                            <div class="strength-sec-item__title">
+                                                <h3>ご自宅まで伺う往診も<span class="ib-span">行っています</span></h3>
+                                            </div>
+                                            <div class="strength-sec-item__text">
+                                                <p>外出が難しい動物たちや飼い主さまのために、獣医師や看護師がご自宅まで伺う往診サービスも<span class="ib-span">行っております。</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="strength-sec-item__image">
+                                            <picture>
+                                                <source srcset="images/about_03_sp.jpg" media="(max-width: 767px)">
+                                                <img src="images/about_03.jpg" alt="自宅で大型犬を診察する女性スタッフの写真" class="strengths_img">
+                                            </picture>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- service -->
+                <section id="service">
+                    <div class="service-sec">
+                        <div class="inner">
+                            <div class="service-sec__title common-title">
+                                <div class="title-icon">
+                                    <img src="./images/footprint_1.svg" alt="">
+                                </div>
+                                <h2>サービス</h2>
+                                <div class="title-icon">
+                                    <img src="./images/footprint_1.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="service-sec__contents">
+                                <div class="service-sec__items">
+
+                                    <div class="service-sec__item service-sec-item">
+                                        <div class="service-sec-item__image">
+                                            <picture>
+                                                <source srcset="./images/service_01_sp.jpg" media="(max-width: 767px)">
+                                                <img src="./images/service_01.jpg" alt="往診サービスを行う女性スタッフと飼い主が会話をしている写真">
+                                            </picture>
+                                        </div>
+                                        <div class="service-sec-item__title">
+                                            <h3>往診サービス</h3>
+                                        </div>
+                                        <div class="service-sec-item__text">
+                                            <p>シニアや介護などのペットのための自宅で診療するサービスです。</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="service-sec__item service-sec-item">
+                                        <div class="service-sec-item__image">
+                                            <picture>
+                                                <source srcset="./images/service_02_sp.jpg" media="(max-width: 767px)">
+                                                <img src="./images/service_02.jpg" alt="ペットホテルで小型犬をお預かりしているスタッフの写真">
+                                            </picture>
+                                        </div>
+                                        <div class="service-sec-item__title">
+                                            <h3>ペットホテル</h3>
+                                        </div>
+                                        <div class="service-sec-item__text">
+                                            <p>短時間の一時預かりから宿泊までご利用いただけるサービスです。</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="service-sec__item service-sec-item">
+                                        <div class="service-sec-item__image">
+                                            <picture>
+                                                <source srcset="./images/service_03_sp.jpg" media="(max-width: 767px)">
+                                                <img src="./images/service_03.jpg" alt="小型犬のトリミングを行うスタッフの写真">
+                                            </picture>
+                                        </div>
+                                        <div class="service-sec-item__title">
+                                            <h3>トリミング</h3>
+                                        </div>
+                                        <div class="service-sec-item__text">
+                                            <p>動物の体に負担をかけない技術や液剤を使用いたします。</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- news -->
+                <section id="news">
+                    <div class="news-sec section-bg">
+                        <div class="inner">
+                            <div class="news-sec__title common-title">
+                                <div class="title-icon">
+                                    <img src="./images/footprint_1.svg" alt="">
+                                </div>
+                                <h2>お知らせ</h2>
+                                <div class="title-icon">
+                                    <img src="./images/footprint_1.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="news-sec__contents">
+                                <ul class="news-sec__items">
+
+                                    <li>
+                                        <a href="" class="news-sec__item news-sec-item">
+                                            <div class="news-sec-item__date">
+                                                <time datetime="2021-02-22">0000.00.00</time>
+                                            </div>
+                                            <div class="news-sec-item__title">
+                                                <h3>去勢手術の助成金</h3>
+                                            </div>
+                                            <div class="news-sec-item__text">
+                                                <p>長崎県より犬猫去勢手術の助成金制度が導入されました。</p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="" class="news-sec__item news-sec-item">
+                                            <div class="news-sec-item__date">
+                                                <time datetime="2021-01-23">0000.00.00</time>
+                                            </div>
+                                            <div class="news-sec-item__title">
+                                                <h3>往診の範囲が拡大</h3>
+                                            </div>
+                                            <div class="news-sec-item__text">
+                                                <p>往診の範囲を長崎市内から長崎県内まで拡大しました。</p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="" class="news-sec__item news-sec-item">
+                                            <div class="news-sec-item__date">
+                                                <time datetime="2021.01.01">0000.00.00</time>
+                                            </div>
+                                            <div class="news-sec-item__title">
+                                                <h3>新年のご挨拶</h3>
+                                            </div>
+                                            <div class="news-sec-item__text">
+                                                <p>謹賀新年。今年もよろしくお願いいたします。</p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="" class="news-sec__item news-sec-item">
+                                            <div class="news-sec-item__date">
+                                                <time datetime="2020.12.01">0000.00.00</time>
+                                            </div>
+                                            <div class="news-sec-item__title">
+                                                <h3>年末年始の診療</h3>
+                                            </div>
+                                            <div class="news-sec-item__text">
+                                                <p>当院では年末年始も24時間休まず診療しております。</p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="" class="news-sec__item news-sec-item">
+                                            <div class="news-sec-item__date">
+                                                <time datetime="2020.11.11">0000.00.00</time>
+                                            </div>
+                                            <div class="news-sec-item__title">
+                                                <h3>開院11周年</h3>
+                                            </div>
+                                            <div class="news-sec-item__text">
+                                                <p>当院開院11周年を迎えることとなりました。</p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- access -->
+                <section id="access">
+                    <div class="access-sec">
+                        <div class="inner">
+                            <div class="access-sec__title common-title">
+                                <div class="title-icon">
+                                    <img src="./images/footprint_1.svg" alt="">
+                                </div>
+                                <h2>アクセス</h2>
+                                <div class="title-icon">
+                                    <img src="./images/footprint_1.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="access-sec__contents">
+                                <div class="access-sec__item access-sec-item">
+                                    <div class="access-sec-item__map">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3353.236590922405!2d129.83669517613794!3d32.81249568217127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356aad0aefe2a6b9%3A0x13f32e3d4c83018!2z44CSODUyLTgwNjUg6ZW35bSO55yM6ZW35bSO5biC5qiq5bC-77yR5LiB55uu77yV4oiS77yT77yW!5e0!3m2!1sja!2sjp!4v1758496303681!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                    <div class="access-sec-item__info">
+                                        <div class="access-sec-item__name">
+                                            <p>滑石きたむら動物病院</p>
+                                        </div>
+                                        <div class="access-sec-item__address">
+                                            <p>〒852-8065　<span class="ib-span">長崎県長崎市横尾○丁目○-○</span></p>
+                                        </div>
+                                        <div class="access-sec-item__tel">
+                                            <p>電話：<span class="pc">000-0000-0000</span><a class="sp" href="tel:000-0000-0000">000-0000-0000</a></p>
+                                            
+                                        </div>
+                                        <div class="access-sec-item__mail">
+                                            <p>メール：<span class="ib-span"><a href="mailto:info@example.com">info@example.com</a></span></p>
+                                        </div>
+                                        <div class="access-sec-item__time">
+                                            <p>診療時間：24時間365日</p>
+                                            <p>休診日：なし</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- contact -->
+                <section id="contact">
+                    <div class="contact-sec section-bg">
+                        <div class="inner">
+                            <div class="contact-sec__title common-title">
+                                <div class="title-icon">
+                                    <img src="./images/footprint_1.svg" alt="">
+                                </div>
+                                <h2>お問い合わせ</h2>
+                                <div class="title-icon">
+                                    <img src="./images/footprint_1.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="contact-sec__contents">
+                                <div class="contact-sec__text">
+                                    <p>ご予約やご質問などお気軽にお問い合わせください。<br>お問い合わせいただいてから3日以内の返信となります。</p>
+                                </div>
+                                <form action="">
+                                    <div class="contact-sec__form-block">
+                                        <dl class="form-area">
+                                            <dt>
+                                                <label for="your-name">お名前</label>
+                                            </dt>
+                                            <dd>
+                                                <input type="text" name="your-name" id="your-name" class="form-control">
+                                            </dd>
+                                        </dl>
+                                        <dl class="form-area">
+                                            <dt>
+                                                <label for="your-email">メールアドレス</label>
+                                            </dt>
+                                            <dd>
+                                                <input type="email" name="your-email" id="your-email" class="form-control">
+                                            </dd>
+                                        </dl>
+                                        <dl class="form-area">
+                                            <dt>
+                                                <label for="your-message">内　容</label>
+                                            </dt>
+                                            <dd>
+                                                <textarea name="your-message" id="your-message" class="form-control form-textarea"></textarea>
+                                            </dd>
+                                        </dl>
+                                        <div class="form-submit-area">
+                                            <input type="submit" class="form-submit" value="送 信">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+    
+        <!-- footer -->
+        <footer>
+            <div class="footer">
+                <div class="footer__nav">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">トップ</a>
+                            </li>
+                            <li>
+                                <a href="#message">ご挨拶</a>
+                            </li>
+                            <li>
+                                <a href="#strength">強み</a>
+                            </li>
+                            <li>
+                                <a href="#service">サービス</a>
+                            </li>
+                            <li>
+                                <a href="#news">お知らせ</a>
+                            </li>
+                            <li>
+                                <a href="#access">アクセス</a>
+                            </li>
+                            <li>
+                                <a href="#contact">お問い合わせ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__copyright">
+                    <p>©︎Copyright0000　滑石きたむら動物病院</p>
+                </div>
+                <div class="footer__sns">
+                    <ul>
                         <li>
-                            <a href="#greeting">ご挨拶</a>
+                            <a href="https://x.com/YukiTottori_" target="_blank" rel="noopener noreferrer">
+                                <div class="twitter">
+                                    <img src="./images/icon_twitter.svg" alt="公式Xアカウントへのリンク">
+                                </div>
+                            </a>
                         </li>
                         <li>
-                            <a href="#strengths">強み</a>
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                                <div class="facebook">
+                                    <img src="./images/icon_facebook.svg" alt="公式facebookアカウントへのリンク">
+                                </div>
+                            </a>
                         </li>
                         <li>
-                            <a href="#services">サービス</a>
+                            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                                <div class="youtube">
+                                    <img src="./images/icon_youtube.svg" alt="公式YouTubeアカウントへのリンク">
+                                </div>
+                            </a>
                         </li>
                         <li>
-                            <a href="#notices">お知らせ</a>
-                        </li>
-                        <li>
-                            <a href="#access">アクセス</a>
-                        </li>
-                        <li>
-                            <a href="#contact">お問い合わせ</a>
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                                <div class="instagram">
+                                    <img src="./images/icon_instagram.svg" alt="公式Instagramアカウントへのリンク">
+                                </div>
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
-        </div>
-    </header>
+        </footer>
 
-    <main>
-        <section id="top">
-            <div class="top_message">
-                <p>滑石きたむら動物病院は</p>
-                <h1>大切な家族の<br>ホームドクターです</h1>
-            </div>
-            <picture>
-                <source srcset="images/fv_sp.jpg" media="(max-width: 767px)">
-                <img src="images/fv.jpg" alt="女性スタッフと大型犬が同じ方向を見ている写真" class="top_img">
-            </picture>
-        </section>
-
-        <section id="greeting">
-            <div class="greeting_inner greeting_inner_sp">
-                <h2>動物たちの健康で<span>幸せな生活をサポート</span></h2>
-                <p>当院は地域に密着し、皆さまの大切な家族の一員である動物たちの<span>ホームドクターを目指しています。</span></p>
-                <p>緊急時だけではなく、日常のちょっとした不安や違和感など<span>お気軽にご相談ください。</span></p>
-                <p>動物たちが健康で幸せな生活を送ることができるようサポートいたします。</p>
-                <img src="images/footprint_2.svg" alt="" class="footprint2">
-            </div>
-        </section>
-
-        <section id="strengths" class="bg_cyan">
-            <div class="strengths_inner strengths_inner_sp">
-                <h2 class="section_title">強み</h2>
-                <div class="strength_item_list">
-                    <div class="strengths_item">
-                        <div class="strength_text">
-                            <h3>経験豊富なスタッフが<span>24時間365日常駐</span></h3>
-                            <p>当院は24時間365日いつでも対応できるよう、豊富な経験を持つ獣医師や看護師が約50名体制で常駐しております。</p>
-                        </div>
-                        <div class="strength_img_area">
-                            <picture>
-                                <source srcset="images/about_01_sp.jpg" media="(max-width: 767px)">
-                                <img src="images/about_01.jpg" alt="24時間体制で常駐している経験豊富なスタッフの写真" class="strengths_img">
-                            </picture>
-                        </div>
-                    </div>
-                    <div class="strengths_item reverse">
-                        <div class="strength_text">
-                            <h3>エキゾチックアニマルも<span>対応します</span></h3>
-                            <p>犬・猫だけではなく、ウサギやハムスター、爬虫類や両生類、鳥類などエキゾチックアニマルも対応しております。</p>
-                        </div>
-                        <div class="strength_img_area">
-                            <picture>
-                                <source srcset="images/about_02_sp.jpg" media="(max-width: 767px)">
-                                <img src="images/about_02.jpg" alt="エキゾチックアニマル（カメレオン）の写真" class="strengths_img">
-                            </picture>
-                        </div>
-                    </div>
-                    <div class="strengths_item">
-                        <div class="strength_text">
-                            <h3>ご自宅まで伺う往診も<span>行っています</span></h3>
-                            <p>外出が難しい動物たちや飼い主さまのために、獣医師や看護師がご自宅まで伺う往診サービスも<span>行っております。</span></p>
-                        </div>
-                        <div class="strength_img_area">
-                            <picture>
-                                <source srcset="images/about_03_sp.jpg" media="(max-width: 767px)">
-                                <img src="images/about_03.jpg" alt="自宅で大型犬を診察する女性スタッフの写真" class="strengths_img">
-                            </picture>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="services">
-            <div class="services_inner">
-                <h2 class="section_title">サービス</h2>
-                <div class="service_list">
-                    <div class="service_content">
-                        <picture>
-                            <source srcset="images/service_01_sp.jpg" media="(max-width: 767px)">
-                            <img src="images/service_01.jpg" alt="往診サービスを行う女性スタッフと飼い主が会話をしている写真">
-                        </picture>
-                        <h3>往診サービス</h3>
-                        <p>シニアや介護などのペットのための自宅で診療するサービスです。</p>
-                    </div>
-                    <div class="service_content">
-                        <picture>
-                            <source srcset="images/service_02_sp.jpg" media="(max-width: 767px)">
-                            <img src="images/service_02.jpg" alt="ペットホテルで小型犬をお預かりしているスタッフの写真">
-                        </picture>
-                        <h3>ペットホテル</h3>
-                        <p>短時間の一時預かりから宿泊までご利用いただけるサービスです。</p>
-                    </div>
-                    <div class="service_content">
-                        <picture>
-                            <source srcset="images/service_03_sp.jpg" media="(max-width: 767px)">
-                            <img src="images/service_03.jpg" alt="小型犬のトリミングを行うスタッフの写真">
-                        </picture>
-                        <h3>トリミング</h3>
-                        <p>動物の体に負担をかけない技術や液剤を使用いたします。</p>
-                    </div>
-                
-                </div>
-            </div>
-        </section>
-
-        <section id="notices" class="bg_cyan">
-            <div class="notices_inner notices_inner_sp">
-                <h2 class="section_title">お知らせ</h2>
-                <ul class="notice_list">
-                    <li class="notice_content_box">
-                        <a href="#" class="notice_content">
-                            <time datetime="2021-02-22" class="notice_date">0000.00.00</time>
-                            <h3 class="notice_title">去勢手術の助成金</h3>
-                            <p class="notice_text">長崎県より犬猫去勢手術の助成金制度が導入されました</p>
-                        </a>
-                    </li>
-                    <li class="notice_content_box">
-                        <a href="#" class="notice_content">
-                            <time datetime="2021-01.23" class="notice_date">0000.00.00</time>
-                            <h3 class="notice_title">往診の範囲が拡大</h3>
-                            <p class="notice_text">往診の範囲を長崎市内から長崎県内まで拡大しました。</p>
-                        </a>
-                    </li>
-                    <li class="notice_content_box">
-                        <a href="#" class="notice_content">
-                            <time datetime="2021-01-01" class="notice_date">0000.00.00</time>
-                            <h3 class="notice_title">新年のご挨拶</h3>
-                            <p class="notice_text">謹賀新年。今年もよろしくお願いいたします。</p>
-                        </a>
-                    </li>
-                    <li class="notice_content_box">
-                        <a href="#" class="notice_content">
-                            <time datetime="2020-12-01" class="notice_date">0000.00.00</time>
-                            <h3 class="notice_title">年末年始の診療</h3>
-                            <p class="notice_text">当院では年末年始も24時間休まず診療しております。</p>
-                        </a>
-                    </li>
-                    <li class="notice_content_box">
-                        <a href="#" class="notice_content">
-                            <time datetime="2020-11-11" class="notice_date">0000.00.00</time>
-                            <h3 class="notice_title">開院11周年</h3>
-                            <p class="notice_text">当院開院11周年を迎えることとなりました。</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="access">
-            <div class="access_inner access_inner_sp">
-                <h2 class="section_title">アクセス</h2>
-                <div class="access_content">
-                    <div class="map_wrapper">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5639.598232778337!2d129.83265623238142!3d32.81014814568299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356aad74ad3259b1%3A0xe0dadc3ad50ab1af!2z44CSODUyLTgwNjUg6ZW35bSO55yM6ZW35bSO5biC5qiq5bC-77yR5LiB55uu77yR4oiS77yR!5e0!3m2!1sja!2sjp!4v1750288521283!5m2!1sja!2sjp" width="440" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="access_map"></iframe>
-                    </div>
-                    <div class="access_text">
-                        <h3 class="access_hospital_name">滑石きたむら動物病院</h3>
-                        <p class="access_text_p address">〒852-8065　<span>長崎県長崎市横尾○丁目○-○</span></p>
-                        <p class="access_text_p phone">
-                            電話：
-                            <span class="phone_number">
-                                <a href="tel:00000000000" class="phone_sp_only sp">000-0000-0000</a>
-                                <span class="phone_pc_only">000-0000-0000</span>
-                            </span>
-                        </p>
-                        <p class="access_text_p email">
-                            メール：<a href="mailto:info@example.com" class="email_link">info@example.com</a>
-                        </p>
-                        <div class="access_border">
-                            <p class="access_text_p opening_hour">診療時間：24時間365日</p>
-                            <p class="access_text_p closed_day">休診日：なし</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="bg_cyan">
-            <div class="contact_inner contact_inner_sp">
-                <h2 class="section_title">お問い合わせ</h2>
-                <p>ご予約やご質問などお気軽にお問い合わせください。<br>お問い合わせいただいてから3日以内の返信となります。</p>
-                <div class="contact_form">
-                    <form action="https://formsubmit.co/y.tottori1014@gmail.com" method="POST" enctype="text/plain">
-                        <div class="form_row">
-                            <label for="name">お名前</label>
-                            <input type="text" name="name" id="name">
-                        </div>
-                        <div class="form_row">
-                            <label for="mail" class="label_email">メールアドレス</label>
-                            <input type="email" name="mail" id="mail">
-                        </div>
-                        <div class="form_row form_content">
-                            <label for="content">内　容</label>
-                            <textarea name="content" id="content" rows="5"></textarea>
-                        </div>
-                        <div class="btn_submit">
-                            <input type="submit" value="送 信">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer bg_gray">
-        <div class="footer_box">
-                <ul class="footer_nav">
-                    <li>
-                        <a href="#" class="nav_btn">トップ</a>
-                    </li>
-                    <li>
-                        <a href="#greeting" class="nav_btn">ご挨拶</a>
-                    </li>
-                    <li>
-                        <a href="#strengths" class="nav_btn">強み</a>
-                    </li>
-                    <li>
-                        <a href="#services" class="nav_btn">サービス</a>
-                    </li>
-                    <li>
-                        <a href="#notices" class="nav_btn">お知らせ</a>
-                    </li>
-                    <li>
-                        <a href="#access" class="nav_btn">アクセス</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="nav_btn">お問い合わせ</a>
-                    </li>
-                </ul>
-                <div class="copyright">
-                    <p>©︎Copyright0000　滑石きたむら動物病院</p>
-                </div>
-                <div class="sns-area">
-                    <a href="https://x.com/YukiTottori_" target="_blank" rel="noopener noreferrer">
-                        <img src="images/icon_twitter.svg" alt="公式Xアカウントへのリンク">
-                    </a>
-                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="images/icon_facebook.svg" alt="公式facebookアカウントへのリンク">
-                    </a>
-                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="images/icon_youtube.svg" alt="公式YouTubeアカウントへのリンク">
-                    </a>
-                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="images/icon_instagram.svg" alt="公式Instagramアカウントへのリンク">
-                    </a>
-                </div>
-        </div>
-    </footer>
+    </div>
 </body>
 
 </html>
